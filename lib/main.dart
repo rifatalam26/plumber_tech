@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plumber_tech/View/splash_screen.dart';
+import 'package:plumber_tech/View/Splash%20screens/splash_screen.dart';
 
 void main(){
   runApp(const MyApp());
