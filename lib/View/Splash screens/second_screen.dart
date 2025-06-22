@@ -58,7 +58,7 @@ class _SecondScreenState extends State<SecondScreen> {
               ),
             ),
             const SizedBox(
-              height: 40,
+              height: 20,
             ),
             Container(
               height: 50,
