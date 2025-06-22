@@ -37,7 +37,45 @@ class _SecondScreenState extends State<SecondScreen> {
               "Customer?",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
-
+            const SizedBox(
+              height: 30,
+            ),
+            Container(
+              height: 50,
+              width: 320,
+              decoration: BoxDecoration(
+                color: const Color(0xff024F9E),
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: const Center(
+                child: Text(
+                  "Customer",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            Container(
+              height: 50,
+              width: 320,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  border: Border.all(color: const Color(0xff3B8CDB), width: 2)),
+              child: const Center(
+                child: Text(
+                  "Engineer",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
