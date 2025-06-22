@@ -27,7 +27,7 @@ class _SecondScreenState extends State<SecondScreen> {
                           "assets/image/Pic_23-09-23_22-59-11-673 1.png"))),
             ),
             const SizedBox(
-              height: 40,
+              height: 50,
             ),
             const Text(
               "Are you Engineer or ",
