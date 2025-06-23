@@ -16,7 +16,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
         child: Column(
           children: [
             const SizedBox(
-              height: 150,
+              height: 70,
             ),
             Container(
               height: 150,
@@ -27,8 +27,26 @@ class _LoginScreen1State extends State<LoginScreen1> {
                           "assets/image/Pic_23-09-23_22-59-11-673 1.png"))),
             ),
             const SizedBox(
-              height: 50,
+              height: 30,
             ),
+            const Text(
+              "Login",
+              style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                const Text(
+                  "E-mail",
+                  style: TextStyle(fontSize: 15),
+                ),
+              ],
+            )
           ],
         ),
       ),
