@@ -9,6 +9,7 @@ class LoginScreen1 extends StatefulWidget {
 
 class _LoginScreen1State extends State<LoginScreen1> {
   bool _secureText = true;
+  bool check = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,9 +86,9 @@ class _LoginScreen1State extends State<LoginScreen1> {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
-              child: TextField(obscureText: _secureText,
+              child: TextField(
+                obscureText: _secureText,
                 decoration: InputDecoration(
-
                     hintText: "Enter your password",
                     hintStyle: const TextStyle(color: Color(0xff798090)),
                     enabledBorder: const OutlineInputBorder(
@@ -108,6 +109,18 @@ class _LoginScreen1State extends State<LoginScreen1> {
                         ))),
               ),
             ),
+            Row(
+              children: [
+                Checkbox(
+                    activeColor: const Color(0xff3B8CDB),
+                    checkColor: Colors.white,
+                    value: check,
+                    onChanged: (c) {
+                      check = c!;
+                      setState(() {});
+                    }),
+              ],
+            )
           ],
         ),
       ),
