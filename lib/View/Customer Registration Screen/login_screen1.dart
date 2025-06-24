@@ -88,7 +88,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
               padding: EdgeInsets.only(left: 20,right: 20),
               child: TextField(
                 decoration: InputDecoration(
-                  hintText: "Enter your email",
+                  hintText: "Enter your password",
                   hintStyle: TextStyle(color: Color(0xff798090)),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
