@@ -66,7 +66,41 @@ class _LoginScreen1State extends State<LoginScreen1> {
                   ),
                 ),
               ),
-            )
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "Password",
+                  style: TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Padding(
+              padding: EdgeInsets.only(left: 20,right: 20),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: "Enter your email",
+                  hintStyle: TextStyle(color: Color(0xff798090)),
+                  enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      borderSide: BorderSide(color: Color(0xff798090))
+                  ),
+                  focusedBorder:  OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      borderSide: BorderSide(color: Color(0xff798090))
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
