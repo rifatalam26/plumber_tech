@@ -36,16 +36,29 @@ class _LoginScreen1State extends State<LoginScreen1> {
             const SizedBox(
               height: 30,
             ),
-            Row(
+            const Row(
               children: [
                 SizedBox(
                   width: 20,
                 ),
-                const Text(
+                Text(
                   "E-mail",
                   style: TextStyle(fontSize: 15),
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 20,right: 20),
+              child: TextFormField(
+                decoration: const InputDecoration(
+                    enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    )
+                ),
+              ),
             )
           ],
         ),
