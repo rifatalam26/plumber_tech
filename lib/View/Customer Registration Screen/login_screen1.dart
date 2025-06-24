@@ -55,7 +55,8 @@ class _LoginScreen1State extends State<LoginScreen1> {
               child: TextFormField(
                 decoration: const InputDecoration(
                     enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      borderSide: BorderSide(color: Color(0xff798090),)
                     )
                 ),
               ),
