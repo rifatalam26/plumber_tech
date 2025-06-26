@@ -138,6 +138,9 @@ class _LoginScreen1State extends State<LoginScreen1> {
                 ),
               ],
             ),
+            const SizedBox(
+              height: 20,
+            ),
             Container(
               height: 50,
               width: 330,
@@ -153,7 +156,37 @@ class _LoginScreen1State extends State<LoginScreen1> {
                       color: Colors.white),
                 ),
               ),
-            )
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              children: [
+                const SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  width: 107,
+                  height: 2,
+                  color: const Color(0xffA8A6A7),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                const Text(
+                  "Log In with ",
+                  style: TextStyle(fontSize: 16, color: Color(0xff4B5262)),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  width: 107,
+                  height: 2,
+                  color: const Color(0xffA8A6A7),
+                ),
+              ],
+            ),
           ],
         ),
       ),
