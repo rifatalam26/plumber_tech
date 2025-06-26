@@ -139,7 +139,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
               ],
             ),
             const SizedBox(
-              height: 20,
+              height: 12,
             ),
             Container(
               height: 50,
@@ -158,7 +158,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
               ),
             ),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
             Row(
               children: [
@@ -186,6 +186,42 @@ class _LoginScreen1State extends State<LoginScreen1> {
                   color: const Color(0xffA8A6A7),
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 50,
+              width: 330,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25),
+                  border:
+                      Border.all(color: const Color(0xff798090), width: 1.5)),
+              child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 22,
+                      width: 22,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image:
+                                  AssetImage("assets/image/Google Icon.png"))),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    const Text(
+                      "Login with Google",
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff192A48)),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
