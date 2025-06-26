@@ -115,7 +115,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
             Row(
               children: [
                 const SizedBox(
-                  width: 20,
+                  width: 10,
                 ),
                 Checkbox(
                     activeColor: const Color(0xff3B8CDB),
@@ -130,14 +130,15 @@ class _LoginScreen1State extends State<LoginScreen1> {
                 ),
                 const Text("Save Information"),
                 const SizedBox(
-                  width: 50,
+                  width: 45,
                 ),
                 const Text(
                   "Forgot Password?",
                   style: TextStyle(color: Color(0xff024F9E)),
                 ),
               ],
-            )
+            ),
+            Container()
           ],
         ),
       ),
