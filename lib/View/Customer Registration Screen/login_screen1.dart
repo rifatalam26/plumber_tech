@@ -138,7 +138,22 @@ class _LoginScreen1State extends State<LoginScreen1> {
                 ),
               ],
             ),
-            Container()
+            Container(
+              height: 50,
+              width: 330,
+              decoration: BoxDecoration(
+                  color: const Color(0xff074A99),
+                  borderRadius: BorderRadius.circular(25)),
+              child: const Center(
+                child: Text(
+                  "Login",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+            )
           ],
         ),
       ),
