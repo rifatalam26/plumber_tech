@@ -18,7 +18,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
         child: Column(
           children: [
             const SizedBox(
-              height: 70,
+              height: 60,
             ),
             Container(
               height: 150,
@@ -29,14 +29,14 @@ class _LoginScreen1State extends State<LoginScreen1> {
                           "assets/image/Pic_23-09-23_22-59-11-673 1.png"))),
             ),
             const SizedBox(
-              height: 30,
+              height: 25,
             ),
             const Text(
               "Login",
               style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
             ),
             const SizedBox(
-              height: 30,
+              height: 25,
             ),
             const Row(
               children: [
@@ -110,7 +110,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 8,
             ),
             Row(
               children: [
@@ -223,6 +223,28 @@ class _LoginScreen1State extends State<LoginScreen1> {
                 ),
               ),
             ),
+            const SizedBox(
+              height: 30,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Don’t have an account?",
+                  style: TextStyle(fontSize: 14, color: Colors.grey.shade600),
+                ),
+                const SizedBox(
+                  width: 4,
+                ),
+                const Text(
+                  " Sign Up",
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Color(0xff024F9E),
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            )
           ],
         ),
       ),
