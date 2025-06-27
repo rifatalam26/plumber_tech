@@ -9,7 +9,6 @@ class LoginScreen2 extends StatefulWidget {
 
 class _LoginScreen2State extends State<LoginScreen2> {
   bool _secureText = true;
-  bool check = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
