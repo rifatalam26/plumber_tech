@@ -293,7 +293,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
             const SizedBox(
               height: 30,
             ),
-
+            Container(
+              height: 50,
+              width: 320,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25)
+              ),
+            )
           ],
         ),
       ),
