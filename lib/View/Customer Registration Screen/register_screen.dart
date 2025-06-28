@@ -295,12 +295,42 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
             Container(
               height: 50,
-              width: 320,
+              width: 330,
               decoration: BoxDecoration(
-                color: Color(0xff024F9E),
-                borderRadius: BorderRadius.circular(25)
+                  color: const Color(0xff024F9E),
+                  borderRadius: BorderRadius.circular(25)),
+              child: const Center(
+                child: Text(
+                  "Create Account",
+                  style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
               ),
-            )
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "have an account?",
+                  style: TextStyle(color: Color(0xff848585)),
+                ),
+                SizedBox(
+                  width: 3,
+                ),
+                Text(
+                  " Sign in here",
+                  style: TextStyle(color: Color(0xff3B8CDB)),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
           ],
         ),
       ),
