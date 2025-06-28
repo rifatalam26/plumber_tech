@@ -297,6 +297,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               height: 50,
               width: 320,
               decoration: BoxDecoration(
+                color: Color(0xff024F9E),
                 borderRadius: BorderRadius.circular(25)
               ),
             )
