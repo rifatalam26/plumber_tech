@@ -10,33 +10,33 @@ class VerifyAccountScreen extends StatefulWidget {
 class _VerifyAccountScreenState extends State<VerifyAccountScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Center(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 100,
               ),
-              Text(
+              const Text(
                 "Verify Account",
                 style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
                     color: Color(0xff192A48)),
               ),
-              Text(
+              const Text(
                 "Code has been send to johndoe@gmail.com.",
                 style: TextStyle(fontSize: 14, color: Color(0xff2D3444)),
               ),
-              Text(
+              const Text(
                 "Enter the code to verify your account.",
                 style: TextStyle(fontSize: 14, color: Color(0xff2D3444)),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              Row(
+              const Row(
                 children: [
                   SizedBox(
                     width: 20,
@@ -47,10 +47,10 @@ class _VerifyAccountScreenState extends State<VerifyAccountScreen> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(left: 20, right: 20),
                 child: TextField(
                   decoration: InputDecoration(
@@ -66,10 +66,10 @@ class _VerifyAccountScreenState extends State<VerifyAccountScreen> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 35,
               ),
-              Row(
+              const Row(
                 children: [
                   SizedBox(
                     width: 75,
@@ -87,12 +87,31 @@ class _VerifyAccountScreenState extends State<VerifyAccountScreen> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Text(
+              const Text(
                 "Resend code in 00:59",
                 style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
+              ),
+              const SizedBox(
+                height: 310,
+              ),
+              Container(
+                height: 50,
+                width: 330,
+                decoration: BoxDecoration(
+                    color: const Color(0xff024F9E),
+                    borderRadius: BorderRadius.circular(25)),
+                child: const Center(
+                  child: Text(
+                    "Verify Account",
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
               ),
             ],
           ),
