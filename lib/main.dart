@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plumber_tech/View/Customer%20Registration%20Screen/verify_account_screen.dart';
 import 'View/Customer Registration Screen/register_screen.dart';
 
 void main(){
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:RegisterScreen() ,
+      home:VerifyAccountScreen() ,
     );
   }
 }
