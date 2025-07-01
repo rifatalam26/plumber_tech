@@ -67,10 +67,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 ),
               ),
               const SizedBox(
-                height: 35,
-              ),
-              const SizedBox(
-                height: 310,
+                height: 400,
               ),
               Container(
                 height: 50,
