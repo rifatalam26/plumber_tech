@@ -26,7 +26,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     color: Color(0xff192A48)),
               ),
               const Text(
-                "Code has been send to johndoe@gmail.com.",
+                "No worries! Enter your address below and we will ",
                 style: TextStyle(fontSize: 14, color: Color(0xff2D3444)),
               ),
               const Text(
@@ -42,7 +42,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     width: 20,
                   ),
                   Text(
-                    "Enter Code",
+                    "E-mail",
                     style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
                   ),
                 ],
@@ -54,7 +54,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 padding: EdgeInsets.only(left: 20, right: 20),
                 child: TextField(
                   decoration: InputDecoration(
-                    hintText: "4 Digit Code",
+                    hintText: "Enter your email",
                     hintStyle:
                     TextStyle(color: Color(0xff7F756B), fontSize: 14),
                     enabledBorder: OutlineInputBorder(
