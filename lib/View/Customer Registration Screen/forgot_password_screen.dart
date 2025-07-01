@@ -77,7 +77,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     borderRadius: BorderRadius.circular(25)),
                 child: const Center(
                   child: Text(
-                    "Verify Account",
+                    "Send Reset Instruction",
                     style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
