@@ -69,30 +69,8 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               const SizedBox(
                 height: 35,
               ),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 75,
-                  ),
-                  Text(
-                    "Did’t Receive Code?",
-                    style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    "Resend Code",
-                    style: TextStyle(fontSize: 14, color: Color(0xff3B8CDB)),
-                  ),
-                ],
-              ),
               const SizedBox(
                 height: 10,
-              ),
-              const Text(
-                "Resend code in 00:59",
-                style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
               ),
               const SizedBox(
                 height: 310,
