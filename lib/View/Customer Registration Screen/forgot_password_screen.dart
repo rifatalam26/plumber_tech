@@ -19,7 +19,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 height: 100,
               ),
               const Text(
-                "Verify Account",
+                "Forgot Password",
                 style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
@@ -68,9 +68,6 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               ),
               const SizedBox(
                 height: 35,
-              ),
-              const SizedBox(
-                height: 10,
               ),
               const SizedBox(
                 height: 310,
