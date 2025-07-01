@@ -16,7 +16,20 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
           child: Column(
             children: [
               const SizedBox(
-                height: 100,
+                height: 50,
+              ),
+              Row(
+                children: [
+                  IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.arrow_back,
+                        size: 30,
+                      ))
+                ],
+              ),
+              const SizedBox(
+                height: 30,
               ),
               const Text(
                 "Verify Email",
