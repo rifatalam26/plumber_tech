@@ -135,6 +135,70 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "Boiler Fault",
+                  style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
+                ),
+                SizedBox(
+                  width: 75,
+                ),
+                Text(
+                  "Other",
+                  style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "Our Service",
+                  style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff192A48)),
+                )
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                const SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  height: 100,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      image: const DecorationImage(
+                          image: AssetImage("assets/image/image 2199.png"))),
+                ),
+                const SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  height: 100,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      image: const DecorationImage(
+                          image: AssetImage("assets/image/img = 01 (1).png"))),
+                ),
+              ],
+            ),
           ],
         ),
       ),
