@@ -8,6 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int index = 2;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -317,6 +318,39 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          onTap: (value) {
+            setState(() {
+              index = value;
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.grey,
+                ),
+                label: "Home",),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.message,
+                  color: Colors.grey,
+                ),
+                label: "Chat"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.notifications,
+                  color: Colors.grey,
+                ),
+                label: "Notification"),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+                color: Colors.grey,
+              ),
+              label: "Profile",
+            ),
+          ]),
     );
   }
 }
