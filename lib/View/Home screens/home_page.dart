@@ -328,24 +328,28 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
+                  size: 30,
                   color: Colors.grey,
                 ),
                 label: "Home",),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.message,
+                  size: 30,
                   color: Colors.grey,
                 ),
                 label: "Chat"),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.notifications,
+                  size: 30,
                   color: Colors.grey,
                 ),
                 label: "Notification"),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,
+                size: 30,
                 color: Colors.grey,
               ),
               label: "Profile",
