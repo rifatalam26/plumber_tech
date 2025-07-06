@@ -94,14 +94,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
             width: 325,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
-            child: Checkbox(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(100)),
-                value: check,
-                onChanged: (k) {
-                  check = k!;
-                  setState(() {});
-                }),
+            child:CircularProgressIndicator(),
           ),
         ],
       ),
