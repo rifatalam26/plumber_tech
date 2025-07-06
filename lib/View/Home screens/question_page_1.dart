@@ -6,9 +6,9 @@ class QuestionPage1 extends StatefulWidget {
   @override
   State<QuestionPage1> createState() => _QuestionPage1State();
 }
-
+List<String> options= ["Low","Normal","High","Unknown"];
 class _QuestionPage1State extends State<QuestionPage1> {
-  String currentOption = "low";
+  String currentOption = options[0];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,29 +93,34 @@ class _QuestionPage1State extends State<QuestionPage1> {
             width: 325,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
-            child:Radio(
-                value: "low",
-                groupValue: currentOption,
-                onChanged: (value){
-                  setState(() {
-                    currentOption=value!;
-                  });
-                }
+            child:ListTile(
+              title: const Text("Low"),
+              leading: Radio(value: options[0],
+                  groupValue: currentOption,
+                  onChanged: (value){
+                setState(() {
+                  currentOption=value.toString();
+                });
+                  }),
             ),
+          ),
+          const SizedBox(
+            height: 10,
           ),
           Container(
             height: 45,
             width: 325,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
-            child:Radio(
-                value: "low",
-                groupValue: currentOption,
-                onChanged: (value){
-                  setState(() {
-                    currentOption=value!;
-                  });
-                }
+            child:ListTile(
+              title: const Text("Normal"),
+              leading: Radio(value: options[1],
+                  groupValue: currentOption,
+                  onChanged: (value){
+                    setState(() {
+                      currentOption=value.toString();
+                    });
+                  }),
             ),
           ),
         ],
