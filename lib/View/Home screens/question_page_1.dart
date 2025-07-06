@@ -8,8 +8,7 @@ class QuestionPage1 extends StatefulWidget {
 }
 
 class _QuestionPage1State extends State<QuestionPage1> {
-  bool check = false;
-  bool check1 = false;
+  String currentOption = "low";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,7 +93,30 @@ class _QuestionPage1State extends State<QuestionPage1> {
             width: 325,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
-            child:CircularProgressIndicator(),
+            child:Radio(
+                value: "low",
+                groupValue: currentOption,
+                onChanged: (value){
+                  setState(() {
+                    currentOption=value!;
+                  });
+                }
+            ),
+          ),
+          Container(
+            height: 45,
+            width: 325,
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(5)),
+            child:Radio(
+                value: "low",
+                groupValue: currentOption,
+                onChanged: (value){
+                  setState(() {
+                    currentOption=value!;
+                  });
+                }
+            ),
           ),
         ],
       ),
