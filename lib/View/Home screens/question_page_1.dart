@@ -6,7 +6,9 @@ class QuestionPage1 extends StatefulWidget {
   @override
   State<QuestionPage1> createState() => _QuestionPage1State();
 }
-List<String> options= ["Low","Normal","High","Unknown"];
+
+List<String> options = ["Low", "Normal", "High", "Unknown"];
+
 class _QuestionPage1State extends State<QuestionPage1> {
   String currentOption = options[0];
   @override
@@ -93,15 +95,16 @@ class _QuestionPage1State extends State<QuestionPage1> {
             width: 325,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
-            child:Center(
+            child: Center(
               child: ListTile(
                 title: const Text("Low"),
-                leading: Radio(value: options[0],
+                leading: Radio(activeColor: Colors.white,focusColor: Colors.white,
+                    value: options[0],
                     groupValue: currentOption,
-                    onChanged: (value){
-                  setState(() {
-                    currentOption=value.toString();
-                  });
+                    onChanged: (value) {
+                      setState(() {
+                        currentOption = value.toString();
+                      });
                     }),
               ),
             ),
@@ -114,13 +117,14 @@ class _QuestionPage1State extends State<QuestionPage1> {
             width: 325,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
-            child:ListTile(
+            child: ListTile(
               title: const Text("Normal"),
-              leading: Radio(value: options[1],
+              leading: Radio(
+                  value: options[1],
                   groupValue: currentOption,
-                  onChanged: (value){
+                  onChanged: (value) {
                     setState(() {
-                      currentOption=value.toString();
+                      currentOption = value.toString();
                     });
                   }),
             ),
