@@ -89,26 +89,28 @@ class _QuestionPage1State extends State<QuestionPage1> {
             height: 10,
           ),
           Container(
-            height: 45,
+            height: 55,
             width: 325,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
-            child:ListTile(
-              title: const Text("Low"),
-              leading: Radio(value: options[0],
-                  groupValue: currentOption,
-                  onChanged: (value){
-                setState(() {
-                  currentOption=value.toString();
-                });
-                  }),
+            child:Center(
+              child: ListTile(
+                title: const Text("Low"),
+                leading: Radio(value: options[0],
+                    groupValue: currentOption,
+                    onChanged: (value){
+                  setState(() {
+                    currentOption=value.toString();
+                  });
+                    }),
+              ),
             ),
           ),
           const SizedBox(
             height: 10,
           ),
           Container(
-            height: 45,
+            height: 55,
             width: 325,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
