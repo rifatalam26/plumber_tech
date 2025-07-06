@@ -8,6 +8,8 @@ class QuestionPage1 extends StatefulWidget {
 }
 
 class _QuestionPage1State extends State<QuestionPage1> {
+  bool check = false;
+  bool check1 = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,30 +60,32 @@ class _QuestionPage1State extends State<QuestionPage1> {
           const SizedBox(
             height: 10,
           ),
-         const Row(
-           children: [
-             SizedBox(
-               width: 20,
-             ),
-             Column(
-               crossAxisAlignment: CrossAxisAlignment.start,
-               children: [
-                 Text("What is the current pressure ",
-                   style: TextStyle(
-                       fontSize: 20,
-                       fontWeight: FontWeight.bold,
-                       color: Color(0xff192A48)),
-                 ),
-                 Text("level on your boiler?",
-                   style: TextStyle(
-                       fontSize: 20,
-                       fontWeight: FontWeight.bold,
-                       color: Color(0xff192A48)),
-                 ),
-               ],
-             ),
-           ],
-         ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "What is the current pressure ",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff192A48)),
+                  ),
+                  Text(
+                    "level on your boiler?",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff192A48)),
+                  ),
+                ],
+              ),
+            ],
+          ),
           const SizedBox(
             height: 10,
           ),
@@ -89,10 +93,16 @@ class _QuestionPage1State extends State<QuestionPage1> {
             height: 45,
             width: 325,
             decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(5)
-            ),
-          )
+                color: Colors.white, borderRadius: BorderRadius.circular(5)),
+            child: Checkbox(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(100)),
+                value: check,
+                onChanged: (k) {
+                  check = k!;
+                  setState(() {});
+                }),
+          ),
         ],
       ),
     );
