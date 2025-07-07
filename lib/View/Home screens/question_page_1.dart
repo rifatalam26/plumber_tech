@@ -94,7 +94,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
             height: 55,
             width: 325,
             decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(5)),
+                color: Colors.blue, borderRadius: BorderRadius.circular(5)),
             child: Center(
               child: ListTile(
                 title: const Text("Low"),
