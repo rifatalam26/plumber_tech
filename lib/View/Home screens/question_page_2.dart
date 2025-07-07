@@ -97,7 +97,7 @@ class _QuestionPage2State extends State<QuestionPage2> {
             child: Center(
               child: ListTile(
                 title: const Text(
-                  "Low",
+                  "Functional",
                   style: TextStyle(color: Colors.white),
                 ),
                 leading: Radio(
@@ -122,7 +122,7 @@ class _QuestionPage2State extends State<QuestionPage2> {
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
             child: ListTile(
-              title: const Text("Normal"),
+              title: const Text("Showing signs of a problem"),
               leading: Radio(
                   activeColor: Colors.white,
                   focusColor: Colors.white,
@@ -136,51 +136,7 @@ class _QuestionPage2State extends State<QuestionPage2> {
             ),
           ),
           const SizedBox(
-            height: 10,
-          ),
-          Container(
-            height: 55,
-            width: 325,
-            decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(5)),
-            child: ListTile(
-              title: const Text("High"),
-              leading: Radio(
-                  activeColor: Colors.white,
-                  focusColor: Colors.white,
-                  value: options[2],
-                  groupValue: currentOption,
-                  onChanged: (value) {
-                    setState(() {
-                      currentOption = value.toString();
-                    });
-                  }),
-            ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Container(
-            height: 55,
-            width: 325,
-            decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(5)),
-            child: ListTile(
-              title: const Text("Unknown"),
-              leading: Radio(
-                  activeColor: Colors.white,
-                  focusColor: Colors.white,
-                  value: options[3],
-                  groupValue: currentOption,
-                  onChanged: (value) {
-                    setState(() {
-                      currentOption = value.toString();
-                    });
-                  }),
-            ),
-          ),
-          const SizedBox(
-            height: 250,
+            height: 390,
           ),
           Container(
             height: 50,
