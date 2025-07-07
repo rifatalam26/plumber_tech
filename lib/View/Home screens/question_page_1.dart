@@ -184,13 +184,14 @@ class _QuestionPage1State extends State<QuestionPage1> {
             ),
           ),
           const SizedBox(
-            height: 250,
+            height: 255,
           ),
           InkWell(
-            onTap: (){
-              // Get.to(const QuestionPage2());
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context)=>QuestionPage2()));
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const QuestionPage2()));
             },
             child: Container(
               height: 50,

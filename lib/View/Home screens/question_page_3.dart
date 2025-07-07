@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:plumber_tech/View/Home%20screens/question_page_3.dart';
 
-class QuestionPage2 extends StatefulWidget {
-  const QuestionPage2({super.key});
+class QuestionPage3 extends StatefulWidget {
+  const QuestionPage3({super.key});
 
   @override
-  State<QuestionPage2> createState() => _QuestionPage2State();
+  State<QuestionPage3> createState() => _QuestionPage3State();
 }
 
 List<String> options = [
-  "Functional",
-  "Showing signs of a problem",
+  "Within the last year",
+  "1-2 years ago",
+  "More than 2 years ago",
+  "Never"
 ];
 
-class _QuestionPage2State extends State<QuestionPage2> {
+class _QuestionPage3State extends State<QuestionPage3> {
   String currentOption = options[0];
   @override
   Widget build(BuildContext context) {
@@ -54,7 +55,7 @@ class _QuestionPage2State extends State<QuestionPage2> {
                 width: 20,
               ),
               Text(
-                "Question 2/4",
+                "Question 3/4",
                 style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -70,24 +71,12 @@ class _QuestionPage2State extends State<QuestionPage2> {
               SizedBox(
                 width: 20,
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Is the completely a functional or ",
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xff192A48)),
-                  ),
-                  Text(
-                    "showing signs of a problem?",
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xff192A48)),
-                  ),
-                ],
+              Text(
+                "When was the boiler last serviced?",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff192A48)),
               ),
             ],
           ),
@@ -103,7 +92,7 @@ class _QuestionPage2State extends State<QuestionPage2> {
             child: Center(
               child: ListTile(
                 title: const Text(
-                  "Functional",
+                  "Within the last year",
                   style: TextStyle(color: Colors.white),
                 ),
                 leading: Radio(
@@ -128,7 +117,7 @@ class _QuestionPage2State extends State<QuestionPage2> {
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(5)),
             child: ListTile(
-              title: const Text("Showing signs of a problem"),
+              title: const Text("1-2 years ago"),
               leading: Radio(
                   activeColor: Colors.white,
                   focusColor: Colors.white,
@@ -142,7 +131,51 @@ class _QuestionPage2State extends State<QuestionPage2> {
             ),
           ),
           const SizedBox(
-            height: 390,
+            height: 10,
+          ),
+          Container(
+            height: 55,
+            width: 325,
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(5)),
+            child: ListTile(
+              title: const Text("More than 2 years ago"),
+              leading: Radio(
+                  activeColor: Colors.white,
+                  focusColor: Colors.white,
+                  value: options[2],
+                  groupValue: currentOption,
+                  onChanged: (value) {
+                    setState(() {
+                      currentOption = value.toString();
+                    });
+                  }),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 55,
+            width: 325,
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(5)),
+            child: ListTile(
+              title: const Text("Never"),
+              leading: Radio(
+                  activeColor: Colors.white,
+                  focusColor: Colors.white,
+                  value: options[3],
+                  groupValue: currentOption,
+                  onChanged: (value) {
+                    setState(() {
+                      currentOption = value.toString();
+                    });
+                  }),
+            ),
+          ),
+          const SizedBox(
+            height: 290,
           ),
           InkWell(
             onTap: () {
