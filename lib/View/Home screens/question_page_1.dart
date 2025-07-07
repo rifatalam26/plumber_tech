@@ -98,7 +98,9 @@ class _QuestionPage1State extends State<QuestionPage1> {
             child: Center(
               child: ListTile(
                 title: const Text("Low"),
-                leading: Radio(activeColor: Colors.white,focusColor: Colors.white,
+                leading: Radio(
+                    activeColor: Colors.white,
+                    focusColor: Colors.white,
                     value: options[0],
                     groupValue: currentOption,
                     onChanged: (value) {
@@ -120,7 +122,53 @@ class _QuestionPage1State extends State<QuestionPage1> {
             child: ListTile(
               title: const Text("Normal"),
               leading: Radio(
+                  activeColor: Colors.white,
+                  focusColor: Colors.white,
                   value: options[1],
+                  groupValue: currentOption,
+                  onChanged: (value) {
+                    setState(() {
+                      currentOption = value.toString();
+                    });
+                  }),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 55,
+            width: 325,
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(5)),
+            child: ListTile(
+              title: const Text("High"),
+              leading: Radio(
+                  activeColor: Colors.white,
+                  focusColor: Colors.white,
+                  value: options[2],
+                  groupValue: currentOption,
+                  onChanged: (value) {
+                    setState(() {
+                      currentOption = value.toString();
+                    });
+                  }),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 55,
+            width: 325,
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(5)),
+            child: ListTile(
+              title: const Text("Unknown"),
+              leading: Radio(
+                  activeColor: Colors.white,
+                  focusColor: Colors.white,
+                  value: options[3],
                   groupValue: currentOption,
                   onChanged: (value) {
                     setState(() {
