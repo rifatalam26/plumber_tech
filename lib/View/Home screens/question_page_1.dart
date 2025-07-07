@@ -177,6 +177,25 @@ class _QuestionPage1State extends State<QuestionPage1> {
                   }),
             ),
           ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 50,
+            width: 330,
+            decoration: BoxDecoration(
+                color: const Color(0xff024F9E),
+                borderRadius: BorderRadius.circular(25)),
+            child: const Center(
+              child: Text(
+                "Reset Password",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+          ),
         ],
       ),
     );
