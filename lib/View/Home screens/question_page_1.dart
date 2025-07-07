@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:plumber_tech/View/Home%20screens/question_page_2.dart';
 
 class QuestionPage1 extends StatefulWidget {
   const QuestionPage1({super.key});
@@ -184,19 +186,26 @@ class _QuestionPage1State extends State<QuestionPage1> {
           const SizedBox(
             height: 250,
           ),
-          Container(
-            height: 50,
-            width: 330,
-            decoration: BoxDecoration(
-                color: const Color(0xff024F9E),
-                borderRadius: BorderRadius.circular(25)),
-            child: const Center(
-              child: Text(
-                "Next",
-                style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
+          InkWell(
+            onTap: (){
+              // Get.to(const QuestionPage2());
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context)=>QuestionPage2()));
+            },
+            child: Container(
+              height: 50,
+              width: 330,
+              decoration: BoxDecoration(
+                  color: const Color(0xff024F9E),
+                  borderRadius: BorderRadius.circular(25)),
+              child: const Center(
+                child: Text(
+                  "Next",
+                  style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
               ),
             ),
           ),
