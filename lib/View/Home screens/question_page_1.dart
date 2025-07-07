@@ -178,7 +178,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
             ),
           ),
           const SizedBox(
-            height: 10,
+            height: 250,
           ),
           Container(
             height: 50,
