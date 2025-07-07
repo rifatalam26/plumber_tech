@@ -94,10 +94,14 @@ class _QuestionPage1State extends State<QuestionPage1> {
             height: 55,
             width: 325,
             decoration: BoxDecoration(
-                color: Colors.blue, borderRadius: BorderRadius.circular(5)),
+                color: const Color(0xff024F9E),
+                borderRadius: BorderRadius.circular(5)),
             child: Center(
               child: ListTile(
-                title: const Text("Low"),
+                title: const Text(
+                  "Low",
+                  style: TextStyle(color: Colors.white),
+                ),
                 leading: Radio(
                     activeColor: Colors.white,
                     focusColor: Colors.white,
