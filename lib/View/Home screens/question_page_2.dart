@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-class QuestionPage1 extends StatefulWidget {
-  const QuestionPage1({super.key});
+class QuestionPage2 extends StatefulWidget {
+  const QuestionPage2({super.key});
 
   @override
-  State<QuestionPage1> createState() => _QuestionPage1State();
+  State<QuestionPage2> createState() => _QuestionPage2State();
 }
-
 List<String> options = ["Low", "Normal", "High", "Unknown"];
-
-class _QuestionPage1State extends State<QuestionPage1> {
+class _QuestionPage2State extends State<QuestionPage2> {
   String currentOption = options[0];
   @override
   Widget build(BuildContext context) {
@@ -50,7 +48,7 @@ class _QuestionPage1State extends State<QuestionPage1> {
                 width: 20,
               ),
               Text(
-                "Question 1/4",
+                "Question 2/4",
                 style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -70,14 +68,14 @@ class _QuestionPage1State extends State<QuestionPage1> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "What is the current pressure ",
+                    "Is the completely a functional or ",
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         color: Color(0xff192A48)),
                   ),
                   Text(
-                    "level on your boiler?",
+                    "showing signs of a problem?",
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
