@@ -53,7 +53,7 @@ class _QuestionPage4State extends State<QuestionPage4> {
                 width: 20,
               ),
               Text(
-                "Question 3/4",
+                "Question 4/4",
                 style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
