@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:plumber_tech/View/Home%20screens/question_page_2.dart';
 
 class QuestionPage1 extends StatefulWidget {
