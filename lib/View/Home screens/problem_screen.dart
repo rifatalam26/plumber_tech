@@ -55,6 +55,34 @@ class _ProblemScreenState extends State<ProblemScreen> {
               ),
             ],
           ),
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "Description",
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff192A48)),
+              )
+            ],
+          ),
+          Container(
+            height: 100,
+            width: 320,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: const Border(
+                    top: BorderSide(color: Color(0xff798090), width: 1.5),
+                    left: BorderSide(color: Color(0xff798090), width: 1.5),
+                    right: BorderSide(color: Color(0xff798090), width: 1.5),
+                    bottom: BorderSide(color: Color(0xff798090), width: 1.5))),
+          )
         ],
       ),
     );
