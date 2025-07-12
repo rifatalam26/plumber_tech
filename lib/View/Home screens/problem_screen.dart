@@ -38,6 +38,23 @@ class _ProblemScreenState extends State<ProblemScreen> {
               )
             ],
           ),
+          const SizedBox(
+            height: 30,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "Please,Add Your Problem Picture",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff192A48)),
+              ),
+            ],
+          ),
         ],
       ),
     );
