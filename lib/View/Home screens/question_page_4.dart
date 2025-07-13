@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plumber_tech/View/Home%20screens/problem_screen1.dart';
 
 class QuestionPage4 extends StatefulWidget {
   const QuestionPage4({super.key});
@@ -180,7 +181,7 @@ class _QuestionPage4State extends State<QuestionPage4> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const QuestionPage4()));
+                      builder: (context) => const ProblemScreen1()));
             },
             child: Container(
               height: 50,

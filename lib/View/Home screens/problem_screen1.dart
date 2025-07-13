@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ProblemScreen extends StatefulWidget {
-  const ProblemScreen({super.key});
+class ProblemScreen1 extends StatefulWidget {
+  const ProblemScreen1({super.key});
 
   @override
-  State<ProblemScreen> createState() => _ProblemScreenState();
+  State<ProblemScreen1> createState() => _ProblemScreen1State();
 }
 
-class _ProblemScreenState extends State<ProblemScreen> {
+class _ProblemScreen1State extends State<ProblemScreen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body:  Column(
         children: [
           const SizedBox(
             height: 50,
@@ -204,9 +204,95 @@ class _ProblemScreenState extends State<ProblemScreen> {
                 ],
               ),
             ],
-          )
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: [
+              const SizedBox(
+                width: 20,
+              ),
+              Stack(
+                children: [
+                  Container(
+                    height: 60,
+                    width: 100,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage("assets/image/image (3).png"))),
+                  ),
+                  const Positioned(
+                    left: 75,
+                    top: 5,
+                    child: CircleAvatar(
+                      radius: 10,
+                      backgroundColor: Colors.white,
+                      child: Icon(
+                        Icons.close,
+                        size: 18,
+                        color: Color(0xff3B8CDB),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Stack(
+                children: [
+                  Container(
+                    height: 60,
+                    width: 100,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.grey.shade700),
+                  ),
+                  Positioned(
+                    left: 35,
+                    top: 20,
+                    child: Container(
+                      height: 20,
+                      width: 25,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: Colors.white),
+                      child: const Icon(
+                        Icons.add,
+                        size: 18,
+                        color: Color(0xff333333),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 245,
+          ),
+          Container(
+            height: 50,
+            width: 330,
+            decoration: BoxDecoration(
+                color: const Color(0xff024F9E),
+                borderRadius: BorderRadius.circular(25)),
+            child: const Center(
+              child: Text(
+                "Next",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
 }
+
