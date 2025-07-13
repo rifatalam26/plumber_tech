@@ -97,6 +97,14 @@ class _ProblemScreenState extends State<ProblemScreen> {
                   "Fault Service at home. The a candidate should ",
                   style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
                 ),
+                Text(
+                  "have Experience and understanding of Pipe  ",
+                  style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
+                ),
+                Text(
+                  "fitting, ... More",
+                  style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
+                ),
               ],
             ),
           )
