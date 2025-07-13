@@ -111,7 +111,25 @@ class _ProblemScreenState extends State<ProblemScreen> {
               ),
             ),
           ),
-
+          const SizedBox(
+            height: 30,
+          ),
+          Row(
+            children: [
+              const SizedBox(
+                width: 20,
+              ),
+              Container(
+                height: 60,
+                width: 105,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    image: const DecorationImage(
+                      fit: BoxFit.cover,
+                        image: AssetImage("assets/image/image.png"))),
+              )
+            ],
+          )
         ],
       ),
     );
