@@ -144,7 +144,65 @@ class _ProblemScreenState extends State<ProblemScreen> {
                     ),
                   )
                 ],
-              )
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Stack(
+                children: [
+                  Container(
+                    height: 60,
+                    width: 105,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage("assets/image/image (1).png"))),
+                  ),
+                  const Positioned(
+                    left: 80,
+                    top: 5,
+                    child: CircleAvatar(
+                      radius: 10,
+                      backgroundColor: Colors.white,
+                      child: Icon(
+                        Icons.close,
+                        size: 18,
+                        color: Color(0xff3B8CDB),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Stack(
+                children: [
+                  Container(
+                    height: 60,
+                    width: 105,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage("assets/image/image (1).png"))),
+                  ),
+                  const Positioned(
+                    left: 80,
+                    top: 5,
+                    child: CircleAvatar(
+                      radius: 10,
+                      backgroundColor: Colors.white,
+                      child: Icon(
+                        Icons.close,
+                        size: 18,
+                        color: Color(0xff3B8CDB),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ],
           )
         ],
