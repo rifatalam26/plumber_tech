@@ -123,7 +123,7 @@ class _ProblemScreenState extends State<ProblemScreen> {
                 children: [
                   Container(
                     height: 60,
-                    width: 105,
+                    width: 100,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         image: const DecorationImage(
@@ -131,7 +131,7 @@ class _ProblemScreenState extends State<ProblemScreen> {
                             image: AssetImage("assets/image/image.png"))),
                   ),
                   const Positioned(
-                    left: 80,
+                    left: 75,
                     top: 5,
                     child: CircleAvatar(
                       radius: 10,
@@ -152,7 +152,7 @@ class _ProblemScreenState extends State<ProblemScreen> {
                 children: [
                   Container(
                     height: 60,
-                    width: 105,
+                    width: 100,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         image: const DecorationImage(
@@ -160,7 +160,7 @@ class _ProblemScreenState extends State<ProblemScreen> {
                             image: AssetImage("assets/image/image (1).png"))),
                   ),
                   const Positioned(
-                    left: 80,
+                    left: 75,
                     top: 5,
                     child: CircleAvatar(
                       radius: 10,
@@ -181,15 +181,15 @@ class _ProblemScreenState extends State<ProblemScreen> {
                 children: [
                   Container(
                     height: 60,
-                    width: 105,
+                    width: 100,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         image: const DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("assets/image/image (1).png"))),
+                            image: AssetImage("assets/image/image (2).png"))),
                   ),
                   const Positioned(
-                    left: 80,
+                    left: 75,
                     top: 5,
                     child: CircleAvatar(
                       radius: 10,
