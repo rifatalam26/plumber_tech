@@ -130,10 +130,18 @@ class _ProblemScreenState extends State<ProblemScreen> {
                             fit: BoxFit.cover,
                             image: AssetImage("assets/image/image.png"))),
                   ),
-                  CircleAvatar(
-                    radius: 10,
-                    backgroundColor: Colors.white,
-                    child: Center(child: Text("×")),
+                  const Positioned(
+                    left: 80,
+                    top: 5,
+                    child: CircleAvatar(
+                      radius: 10,
+                      backgroundColor: Colors.white,
+                      child: Icon(
+                        Icons.close,
+                        size: 18,
+                        color: Color(0xff3B8CDB),
+                      ),
+                    ),
                   )
                 ],
               )
