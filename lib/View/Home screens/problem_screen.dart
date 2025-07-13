@@ -58,7 +58,7 @@ class _ProblemScreenState extends State<ProblemScreen> {
           const SizedBox(
             height: 20,
           ),
-          Row(
+          const Row(
             children: [
               SizedBox(
                 width: 20,
@@ -73,7 +73,7 @@ class _ProblemScreenState extends State<ProblemScreen> {
             ],
           ),
           Container(
-            height: 100,
+            height: 150,
             width: 320,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -82,6 +82,23 @@ class _ProblemScreenState extends State<ProblemScreen> {
                     left: BorderSide(color: Color(0xff798090), width: 1.5),
                     right: BorderSide(color: Color(0xff798090), width: 1.5),
                     bottom: BorderSide(color: Color(0xff798090), width: 1.5))),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Were looking for reliable and detail-oriented ",
+                  style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
+                ),
+                Text(
+                  "Plumber Helper help with Pipe fitting and Boiler",
+                  style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
+                ),
+                Text(
+                  "Fault Service at home. The a candidate should ",
+                  style: TextStyle(fontSize: 14, color: Color(0xff192A48)),
+                ),
+              ],
+            ),
           )
         ],
       ),
