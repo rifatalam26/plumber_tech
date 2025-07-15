@@ -39,7 +39,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
             ],
           ),
           const SizedBox(
-            height: 30,
+            height: 20,
           ),
           const Row(
             children: [
@@ -47,7 +47,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 width: 20,
               ),
               Text(
-                "Please,Add Your Problem Picture",
+                "Suggested Engineer Skill",
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
             ],
           ),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           const Row(
             children: [
