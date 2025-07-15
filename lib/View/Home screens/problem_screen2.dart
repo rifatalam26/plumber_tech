@@ -58,7 +58,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
           const SizedBox(
             height: 10,
           ),
-           Row(
+          Row(
             children: [
               const SizedBox(
                 width: 20,
@@ -67,8 +67,13 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 height: 40,
                 width: 120,
                 decoration: BoxDecoration(
-                  color: const Color(0xff024F9E),
-                  borderRadius: BorderRadius.circular(10)
+                    color: const Color(0xff024F9E),
+                    borderRadius: BorderRadius.circular(10)),
+                child: const Center(
+                  child: Text(
+                    "Pipe fitting",
+                    style: TextStyle(fontSize: 17, color: Colors.white),
+                  ),
                 ),
               )
             ],
