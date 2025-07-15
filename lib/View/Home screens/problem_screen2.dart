@@ -58,17 +58,18 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
           const SizedBox(
             height: 10,
           ),
-          const Row(
+           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
-              Text(
-                "Description",
-                style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xff192A48)),
+              Container(
+                height: 40,
+                width: 120,
+                decoration: BoxDecoration(
+                  color: const Color(0xff024F9E),
+                  borderRadius: BorderRadius.circular(10)
+                ),
               )
             ],
           ),
