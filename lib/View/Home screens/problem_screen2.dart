@@ -10,6 +10,12 @@ class ProblemScreen2 extends StatefulWidget {
 class _ProblemScreen2State extends State<ProblemScreen2> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
