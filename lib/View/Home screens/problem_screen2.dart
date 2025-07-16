@@ -246,9 +246,24 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
             ],
           ),
           const SizedBox(
-            height: 100,
+            height: 400,
           ),
-
+          Container(
+            height: 50,
+            width: 330,
+            decoration: BoxDecoration(
+                color: const Color(0xff024F9E),
+                borderRadius: BorderRadius.circular(25)),
+            child: const Center(
+              child: Text(
+                "Next",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+          ),
         ],
       ),
     );
