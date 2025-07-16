@@ -83,7 +83,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 height: 40,
                 width: 90,
                 decoration: BoxDecoration(
-                    color:  Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: const Center(
                   child: Text(
@@ -99,7 +99,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 height: 40,
                 width: 110,
                 decoration: BoxDecoration(
-                    color:  Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: const Center(
                   child: Text(
@@ -122,7 +122,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 height: 40,
                 width: 110,
                 decoration: BoxDecoration(
-                    color:  Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: const Center(
                   child: Text(
@@ -138,7 +138,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 height: 40,
                 width: 110,
                 decoration: BoxDecoration(
-                    color:  Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: const Center(
                   child: Text(
@@ -154,7 +154,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 height: 40,
                 width: 90,
                 decoration: BoxDecoration(
-                    color:  Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: const Center(
                   child: Text(
@@ -177,7 +177,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 height: 40,
                 width: 90,
                 decoration: BoxDecoration(
-                    color:  Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: const Center(
                   child: Text(
@@ -193,7 +193,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 height: 40,
                 width: 110,
                 decoration: BoxDecoration(
-                    color:  Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: const Center(
                   child: Text(
@@ -209,7 +209,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 height: 40,
                 width: 110,
                 decoration: BoxDecoration(
-                    color:  Colors.white,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: const Center(
                   child: Text(
@@ -223,12 +223,20 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
           const SizedBox(
             height: 8,
           ),
-          Container(
-            height: 20,
-            width: 20,
-            decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage("assets/image/Frame (9).png"))
-            ),
+          Row(
+            children: [
+              const SizedBox(
+                width: 20,
+              ),
+              Container(
+                height: 20,
+                width: 20,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                        image: AssetImage("assets/image/Frame (9).png"))),
+              ),
+            ],
           )
         ],
       ),
