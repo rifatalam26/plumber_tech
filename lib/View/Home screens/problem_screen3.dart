@@ -17,7 +17,14 @@ class _ProblemScreen3State extends State<ProblemScreen3> {
             SizedBox(
               height: 300,
             ),
-            CircularProgressIndicator()
+            CircularProgressIndicator(),
+            SizedBox(
+              height: 50,
+            ),
+            Text(
+              "Please Wait....",
+              style: TextStyle(color: Color(0xff192A48), fontSize: 17),
+            )
           ],
         ),
       ),
