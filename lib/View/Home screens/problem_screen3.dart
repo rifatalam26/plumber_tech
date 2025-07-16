@@ -11,10 +11,15 @@ class _ProblemScreen3State extends State<ProblemScreen3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          CircularProgressIndicator()
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 300,
+            ),
+            CircularProgressIndicator()
+          ],
+        ),
       ),
     );
   }
