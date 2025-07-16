@@ -220,6 +220,16 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
               ),
             ],
           ),
+          const SizedBox(
+            height: 8,
+          ),
+          Container(
+            height: 20,
+            width: 20,
+            decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage("assets/image/Frame (9).png"))
+            ),
+          )
         ],
       ),
     );
