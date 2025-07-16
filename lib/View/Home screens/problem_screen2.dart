@@ -221,7 +221,7 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
             ],
           ),
           const SizedBox(
-            height: 8,
+            height: 10,
           ),
           Row(
             children: [
@@ -233,11 +233,22 @@ class _ProblemScreen2State extends State<ProblemScreen2> {
                 width: 20,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
-                      fit: BoxFit.cover,
+                        fit: BoxFit.cover,
                         image: AssetImage("assets/image/Frame (9).png"))),
               ),
+              const SizedBox(
+                width: 8,
+              ),
+              const Text(
+                "Pick Any 5 Option",
+                style: TextStyle(color: Color(0xff192A48)),
+              )
             ],
-          )
+          ),
+          const SizedBox(
+            height: 100,
+          ),
+
         ],
       ),
     );
