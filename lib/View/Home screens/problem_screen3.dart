@@ -24,7 +24,22 @@ class _ProblemScreen3State extends State<ProblemScreen3> {
             Text(
               "Please Wait....",
               style: TextStyle(color: Color(0xff192A48), fontSize: 17),
-            )
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Column(
+              children: [
+                Text(
+                  "We are searching the best Engineer for",
+                  style: TextStyle(color: Color(0xff192A48), fontSize: 17),
+                ),
+                Text(
+                  "your job",
+                  style: TextStyle(color: Color(0xff192A48), fontSize: 17),
+                ),
+              ],
+            ),
           ],
         ),
       ),
