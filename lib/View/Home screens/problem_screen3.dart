@@ -26,7 +26,7 @@ class _ProblemScreen3State extends State<ProblemScreen3> {
               style: TextStyle(color: Color(0xff192A48), fontSize: 17),
             ),
             SizedBox(
-              height: 100,
+              height: 200,
             ),
             Column(
               children: [
