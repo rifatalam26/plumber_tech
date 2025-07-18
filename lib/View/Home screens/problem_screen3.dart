@@ -20,6 +20,8 @@ class _ProblemScreen3State extends State<ProblemScreen3> {
             CircularProgressIndicator(
               color: Color(0xff024F9E),
               backgroundColor: Color(0xffE4E4E4),
+              strokeWidth: 3,
+              strokeAlign: 4.5,
             ),
             SizedBox(
               height: 50,
