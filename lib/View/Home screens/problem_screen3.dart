@@ -17,7 +17,10 @@ class _ProblemScreen3State extends State<ProblemScreen3> {
             SizedBox(
               height: 300,
             ),
-            CircularProgressIndicator(),
+            CircularProgressIndicator(
+              color: Color(0xff024F9E),
+              backgroundColor: Color(0xffE4E4E4),
+            ),
             SizedBox(
               height: 50,
             ),
