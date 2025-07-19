@@ -505,7 +505,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
             Row(
               children: [
                 SizedBox(
-                  width: 48,
+                  width: 26,
                 ),
                 Text(
                   ".",
@@ -524,7 +524,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
             Row(
               children: [
                 SizedBox(
-                  width: 26,
+                  width: 48,
                 ),
                 Text(
                   ".",
@@ -535,26 +535,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   width: 8,
                 ),
                 Text(
-                  "What type of leak do you have?",
-                  style: TextStyle(color: Color(0xff000000)),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 26,
-                ),
-                Text(
-                  ".",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold, color: Color(0xff000000)),
-                ),
-                SizedBox(
-                  width: 8,
-                ),
-                Text(
-                  "What is the current pressure level your boiler?",
+                  "Describe the problem in a few words.",
                   style: TextStyle(color: Color(0xff000000)),
                 ),
               ],
