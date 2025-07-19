@@ -546,6 +546,37 @@ class _QuestionScreenState extends State<QuestionScreen> {
               ),
             ],
           ),
+          Row(
+            children: [
+              SizedBox(
+                width: 18,
+              ),
+              Text(
+                "4. Other",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, color: Color(0xff000000)),
+              )
+            ],
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 48,
+              ),
+              Text(
+                ".",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, color: Color(0xff000000)),
+              ),
+              SizedBox(
+                width: 8,
+              ),
+              Text(
+                "Describe the problem in a few words.",
+                style: TextStyle(color: Color(0xff000000)),
+              ),
+            ],
+          ),
         ],
       ),
     );
