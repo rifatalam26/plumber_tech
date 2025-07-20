@@ -36,8 +36,8 @@ class _ProblemScreenState extends State<ProblemScreen> {
             Column(
               children: [
                 Text(
-                  "We are searching the best Engineer for",
-                  style: TextStyle(color: Color(0xff192A48), fontSize: 17),
+                  "01 :30 Min",
+                  style: TextStyle(color: Color(0xff3B8CDB), fontSize: 24),
                 ),
                 Text(
                   "your job",
