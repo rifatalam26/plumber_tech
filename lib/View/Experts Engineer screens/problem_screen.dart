@@ -40,7 +40,7 @@ class _ProblemScreenState extends State<ProblemScreen> {
                   style: TextStyle(color: Color(0xff3B8CDB), fontSize: 24),
                 ),
                 Text(
-                  "your job",
+                  "Waiting for Engineer Confirmation ",
                   style: TextStyle(color: Color(0xff192A48), fontSize: 17),
                 ),
               ],
