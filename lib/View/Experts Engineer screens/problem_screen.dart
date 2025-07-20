@@ -10,6 +10,42 @@ class ProblemScreen extends StatefulWidget {
 class _ProblemScreenState extends State<ProblemScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          SizedBox(
+            height: 300,
+          ),
+          CircularProgressIndicator(
+            color: Color(0xff024F9E),
+            backgroundColor: Color(0xffE4E4E4),
+            strokeWidth: 3,
+            strokeAlign: 4.5,
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          Text(
+            "Please Wait....",
+            style: TextStyle(color: Color(0xff192A48), fontSize: 17),
+          ),
+          SizedBox(
+            height: 230,
+          ),
+          Column(
+            children: [
+              Text(
+                "We are searching the best Engineer for",
+                style: TextStyle(color: Color(0xff192A48), fontSize: 17),
+              ),
+              Text(
+                "your job",
+                style: TextStyle(color: Color(0xff192A48), fontSize: 17),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
   }
 }
