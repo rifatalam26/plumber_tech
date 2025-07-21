@@ -10,13 +10,13 @@ class TaskStatusScreen extends StatefulWidget {
 class _TaskStatusScreenState extends State<TaskStatusScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Column(
         children: [
-          const SizedBox(
+          SizedBox(
             height: 50,
           ),
-          const Row(
+          Row(
             children: [
               SizedBox(
                 width: 15,
@@ -38,7 +38,7 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
               )
             ],
           ),
-          const SizedBox(
+          SizedBox(
             height: 200,
           ),
           Row(
@@ -46,7 +46,13 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
               SizedBox(
                 width: 20,
               ),
-              Text("Skills",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Color(0xff192A48)),)
+              Text(
+                "Skills",
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff192A48)),
+              )
             ],
           )
         ],
