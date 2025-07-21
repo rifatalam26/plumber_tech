@@ -38,6 +38,17 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
               )
             ],
           ),
+          const SizedBox(
+            height: 200,
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text("Skills",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Color(0xff192A48)),)
+            ],
+          )
         ],
       ),
     );
