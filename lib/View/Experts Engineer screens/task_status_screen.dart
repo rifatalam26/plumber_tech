@@ -10,7 +10,7 @@ class TaskStatusScreen extends StatefulWidget {
 class _TaskStatusScreenState extends State<TaskStatusScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -60,12 +60,17 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
               height: 10,
             ),
             Container(
-              height: 30,
-              width: 60,
+              height: 40,
+              width: 100,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color:const Color(0xff798090),width: 1.5)
-              ),
+                  borderRadius: BorderRadius.circular(20),
+                  border:
+                      Border.all(color: const Color(0xff798090), width: 1.5)),
+              child: const Center(
+                  child: Text(
+                "Pipe fitting",
+                style: TextStyle(color: Color(0xff484F5F)),
+              )),
             )
           ],
         ),
