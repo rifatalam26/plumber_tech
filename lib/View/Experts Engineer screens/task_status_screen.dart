@@ -54,7 +54,7 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                     color: Color(0xff192A48)),
               )
             ],
-          )
+          ),
         ],
       ),
     );
