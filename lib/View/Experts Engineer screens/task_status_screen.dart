@@ -59,18 +59,57 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
             const SizedBox(
               height: 10,
             ),
-            Container(
-              height: 40,
-              width: 100,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  border:
+            Row(
+              children: [
+                const SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border:
+                          Border.all(color: const Color(0xff798090), width: 1.5)),
+                  child: const Center(
+                      child: Text(
+                    "Pipe fitting",
+                    style: TextStyle(color: Color(0xff484F5F)),
+                  )),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border:
                       Border.all(color: const Color(0xff798090), width: 1.5)),
-              child: const Center(
-                  child: Text(
-                "Pipe fitting",
-                style: TextStyle(color: Color(0xff484F5F)),
-              )),
+                  child: const Center(
+                      child: Text(
+                        "Plumbing",
+                        style: TextStyle(color: Color(0xff484F5F)),
+                      )),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border:
+                      Border.all(color: const Color(0xff798090), width: 1.5)),
+                  child: const Center(
+                      child: Text(
+                        "Welding",
+                        style: TextStyle(color: Color(0xff484F5F)),
+                      )),
+                ),
+              ],
             )
           ],
         ),
