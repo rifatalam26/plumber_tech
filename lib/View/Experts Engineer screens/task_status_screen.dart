@@ -14,10 +14,10 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Row(
+            const Row(
               children: [
                 SizedBox(
                   width: 15,
@@ -39,7 +39,7 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 200,
             ),
             const Row(
