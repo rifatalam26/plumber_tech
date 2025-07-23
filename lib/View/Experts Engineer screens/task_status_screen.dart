@@ -56,7 +56,6 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                 )
               ],
             ),
-
             const SizedBox(
               height: 10,
             ),
@@ -111,7 +110,21 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                       )),
                 ),
               ],
-            )
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "About John",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff192A48)),
+                )
+              ],
+            ),
           ],
         ),
       ),
