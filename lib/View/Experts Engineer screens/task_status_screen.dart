@@ -112,7 +112,7 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
               ],
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             const Row(
               children: [
@@ -128,6 +128,7 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                 )
               ],
             ),
+
           ],
         ),
       ),
