@@ -69,8 +69,8 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                   width: 100,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      border:
-                          Border.all(color: const Color(0xff798090), width: 1.5)),
+                      border: Border.all(
+                          color: const Color(0xff798090), width: 1.5)),
                   child: const Center(
                       child: Text(
                     "Pipe fitting",
@@ -85,13 +85,13 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                   width: 100,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      border:
-                      Border.all(color: const Color(0xff798090), width: 1.5)),
+                      border: Border.all(
+                          color: const Color(0xff798090), width: 1.5)),
                   child: const Center(
                       child: Text(
-                        "Plumbing",
-                        style: TextStyle(color: Color(0xff484F5F)),
-                      )),
+                    "Plumbing",
+                    style: TextStyle(color: Color(0xff484F5F)),
+                  )),
                 ),
                 const SizedBox(
                   width: 10,
@@ -101,13 +101,13 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                   width: 100,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      border:
-                      Border.all(color: const Color(0xff798090), width: 1.5)),
+                      border: Border.all(
+                          color: const Color(0xff798090), width: 1.5)),
                   child: const Center(
                       child: Text(
-                        "Welding",
-                        style: TextStyle(color: Color(0xff484F5F)),
-                      )),
+                    "Welding",
+                    style: TextStyle(color: Color(0xff484F5F)),
+                  )),
                 ),
               ],
             ),
@@ -128,7 +128,14 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                 )
               ],
             ),
-
+            const Column(
+              children: [
+                Text(
+                  "I’m Liam, a dedicated Plumber Engineer specializing in ",
+                  style: TextStyle(color: Color(0xff4C5363)),
+                )
+              ],
+            )
           ],
         ),
       ),
