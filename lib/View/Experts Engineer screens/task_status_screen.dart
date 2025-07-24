@@ -145,7 +145,15 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                       style: TextStyle(color: Color(0xff4C5363)),
                     ),
                     Text(
-                      "Passionate=innovation  sustainability, I ensure",
+                      "Passionate = innovation  sustainability, I ensure",
+                      style: TextStyle(color: Color(0xff4C5363)),
+                    ),
+                    Text(
+                      "reliable solutions for homes, businesses, and ",
+                      style: TextStyle(color: Color(0xff4C5363)),
+                    ),
+                    Text(
+                      "industries",
                       style: TextStyle(color: Color(0xff4C5363)),
                     ),
                   ],
