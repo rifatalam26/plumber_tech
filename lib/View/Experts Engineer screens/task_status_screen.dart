@@ -134,6 +134,7 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                   width: 20,
                 ),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "I’m a dedicated Plumber Engineer specializing in ",
@@ -141,6 +142,10 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                     ),
                     Text(
                       "designing maintaining efficient plumbing systems.",
+                      style: TextStyle(color: Color(0xff4C5363)),
+                    ),
+                    Text(
+                      "Passionate=innovation  sustainability, I ensure",
                       style: TextStyle(color: Color(0xff4C5363)),
                     ),
                   ],
