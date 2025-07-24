@@ -128,12 +128,23 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                 )
               ],
             ),
-            const Column(
+            const Row(
               children: [
-                Text(
-                  "I’m Liam, a dedicated Plumber Engineer specializing in ",
-                  style: TextStyle(color: Color(0xff4C5363)),
-                )
+                SizedBox(
+                  width: 20,
+                ),
+                Column(
+                  children: [
+                    Text(
+                      "I’m a dedicated Plumber Engineer specializing in ",
+                      style: TextStyle(color: Color(0xff4C5363)),
+                    ),
+                    Text(
+                      "I’m a dedicated Plumber Engineer specializing in ",
+                      style: TextStyle(color: Color(0xff4C5363)),
+                    ),
+                  ],
+                ),
               ],
             )
           ],
