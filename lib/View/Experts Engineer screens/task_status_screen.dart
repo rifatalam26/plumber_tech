@@ -140,7 +140,7 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                       style: TextStyle(color: Color(0xff4C5363)),
                     ),
                     Text(
-                      "I’m a dedicated Plumber Engineer specializing in ",
+                      "designing maintaining efficient plumbing systems.",
                       style: TextStyle(color: Color(0xff4C5363)),
                     ),
                   ],
