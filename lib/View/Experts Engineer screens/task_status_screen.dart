@@ -190,9 +190,9 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                   width: 105,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                        fit: BoxFit.cover,
+                          fit: BoxFit.cover,
                           image: AssetImage("assets/image/image 2191.png")),
-                  borderRadius: BorderRadius.all(Radius.circular(10))),
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
                 ),
                 const SizedBox(
                   width: 8,
@@ -237,15 +237,18 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                           image: AssetImage("assets/image/image 2193.png")),
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                 ),
-
               ],
             ),
             const SizedBox(
               height: 10,
             ),
             Container(
-              height: 300,
-
+              height: 500,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(15),
+                      topRight: Radius.circular(15))),
             )
           ],
         ),
