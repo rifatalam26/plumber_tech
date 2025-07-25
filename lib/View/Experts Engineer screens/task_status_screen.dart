@@ -292,6 +292,32 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                         ],
                       )
                     ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    height: 60,
+                    width: 325,
+                    decoration: const BoxDecoration(
+                        color: Color(0xff192A48),
+                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    child: const Padding(
+                      padding: EdgeInsets.only(left: 10, right: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Service fee",
+                            style: TextStyle(fontSize: 17, color: Colors.white),
+                          ),
+                          Text(
+                            ("\$45"),
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ),
                   )
                 ],
               ),
