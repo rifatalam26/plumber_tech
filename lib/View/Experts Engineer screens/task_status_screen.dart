@@ -128,6 +128,9 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                 )
               ],
             ),
+            const SizedBox(
+              height: 5,
+            ),
             const Row(
               children: [
                 SizedBox(
@@ -159,6 +162,90 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                   ],
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "Portfolio",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff192A48)),
+                )
+              ],
+            ),
+            Row(
+              children: [
+                const SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  height: 60,
+                  width: 105,
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                          image: AssetImage("assets/image/image 2191.png")),
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
+                ),
+                const SizedBox(
+                  width: 8,
+                ),
+                Container(
+                  height: 60,
+                  width: 105,
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage("assets/image/image 2192.png")),
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                ),
+                const SizedBox(
+                  width: 8,
+                ),
+                Container(
+                  height: 60,
+                  width: 105,
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage("assets/image/image 2194.png")),
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                const SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  height: 60,
+                  width: 105,
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage("assets/image/image 2193.png")),
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                ),
+
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 300,
+
             )
           ],
         ),
