@@ -240,15 +240,61 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
               ],
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             Container(
-              height: 500,
+              height: 300,
               decoration: const BoxDecoration(
-                color: Colors.white,
+                  color: Colors.white,
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15))),
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20))),
+              child: Column(
+                children: [
+                  const SizedBox(
+                    height: 35,
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 20,
+                      ),
+                      Container(
+                        height: 80,
+                        width: 85,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage("assets/image/image.png")),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10))),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Boiler Fault Service ",
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xff192A48)),
+                          ),
+                          Text(
+                            "26/12/2024 . 17:27h",
+                            style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xff484F5F)),
+                          ),
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
