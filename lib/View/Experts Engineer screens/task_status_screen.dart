@@ -243,7 +243,7 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
               height: 20,
             ),
             Container(
-              height: 300,
+              height: 400,
               decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -294,7 +294,7 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                     ],
                   ),
                   const SizedBox(
-                    height: 20,
+                    height: 25,
                   ),
                   Container(
                     height: 60,
@@ -318,7 +318,42 @@ class _TaskStatusScreenState extends State<TaskStatusScreen> {
                         ],
                       ),
                     ),
-                  )
+                  ),
+                  const SizedBox(
+                    height: 35,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 320,
+                    decoration: const BoxDecoration(
+                        color: Color(0xff074A99),
+                        borderRadius: BorderRadius.all(Radius.circular(30))),
+                    child: const Center(
+                        child: Text(
+                      "Proceed To Payment ",
+                      style: TextStyle(fontSize: 15, color: Colors.white),
+                    )),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 320,
+                    decoration: const BoxDecoration(
+                        border:
+                            Border(top: BorderSide(color: Color(0xff024F9E),width: 1.5),
+                            bottom: BorderSide(color: Color(0xff024F9E),width: 1.5),
+                              left: BorderSide(color: Color(0xff024F9E),width: 1.5),
+                              right: BorderSide(color: Color(0xff024F9E),width: 1.5),
+                            ),
+                        borderRadius: BorderRadius.all(Radius.circular(30))),
+                    child: const Center(
+                        child: Text(
+                      "Cancel",
+                      style: TextStyle(fontSize: 15, color: Color(0xff024F9E)),
+                    )),
+                  ),
                 ],
               ),
             )
