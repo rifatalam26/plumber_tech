@@ -10,7 +10,7 @@ class PaymentScreen extends StatefulWidget {
 class _PaymentScreenState extends State<PaymentScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Column(
         children: [
           const SizedBox(
@@ -63,9 +63,8 @@ class _PaymentScreenState extends State<PaymentScreen> {
             height: 60,
             width: 320,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25),
-
-            ),
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: const Color(0xff024F9E), width: 1.5)),
           )
         ],
       ),
