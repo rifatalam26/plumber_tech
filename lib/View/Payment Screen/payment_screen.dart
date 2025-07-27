@@ -35,6 +35,9 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ],
             ),
           ),
+          SizedBox(
+            height: 50,
+          ),
           Text(
             "Payment Method",
             style: TextStyle(
