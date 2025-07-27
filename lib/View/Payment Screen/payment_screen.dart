@@ -10,13 +10,13 @@ class PaymentScreen extends StatefulWidget {
 class _PaymentScreenState extends State<PaymentScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(left: 20, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -35,27 +35,38 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
-          Text(
+          const Text(
             "Payment Method",
             style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: Color(0xff192A48)),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Text(
+          const Text(
             "Choose desired type. We offer cars suitable for",
             style: TextStyle(fontSize: 15, color: Color(0xff4A5161)),
           ),
-          Text(
+          const Text(
             "most every day needs.",
             style: TextStyle(fontSize: 15, color: Color(0xff4A5161)),
           ),
+          const SizedBox(
+            height: 50,
+          ),
+          Container(
+            height: 60,
+            width: 320,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(25),
+
+            ),
+          )
         ],
       ),
     );
