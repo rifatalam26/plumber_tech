@@ -34,6 +34,13 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 )
               ],
             ),
+          ),
+          Text(
+            "Payment Method",
+            style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Color(0xff192A48)),
           )
         ],
       ),
