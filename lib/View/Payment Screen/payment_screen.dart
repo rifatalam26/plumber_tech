@@ -44,7 +44,18 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: Color(0xff192A48)),
-          )
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            "Choose desired type. We offer cars suitable for",
+            style: TextStyle(fontSize: 15, color: Color(0xff4A5161)),
+          ),
+          Text(
+            "most every day needs.",
+            style: TextStyle(fontSize: 15, color: Color(0xff4A5161)),
+          ),
         ],
       ),
     );
