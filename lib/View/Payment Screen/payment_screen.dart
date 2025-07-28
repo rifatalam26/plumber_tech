@@ -67,12 +67,16 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 border: Border.all(color: const Color(0xff024F9E), width: 1.5)),
             child: Row(
               children: [
+                const SizedBox(
+                  width: 10,
+                ),
                 Container(
-                  height: 20,
-                  width: 40,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(image: AssetImage("assets/image/Frame 2147224249.png"))
-                  ),
+                  height: 30,
+                  width: 50,
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image:
+                              AssetImage("assets/image/Frame 2147224249.png"))),
                 )
               ],
             ),
