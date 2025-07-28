@@ -59,9 +59,8 @@ class _PaymentScreenState extends State<PaymentScreen> {
           const SizedBox(
             height: 50,
           ),
-
           Container(
-            height: 60,
+            height: 75,
             width: 320,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
