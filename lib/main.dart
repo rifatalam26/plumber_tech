@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'View/Payment Screen/payment_screen.dart';
+import 'View/Payment Screen/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PaymentScreen(),
+      home: ProfileScreen(),
     );
   }
 }
