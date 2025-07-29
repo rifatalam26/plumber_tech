@@ -81,23 +81,60 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 const SizedBox(
                   width: 10,
                 ),
-                const Column(
-                  children: [
-                    Row(
-                      children: [
-                        Text(
-                          "****",
-                          style: TextStyle(
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black),
-                        ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                      ],
-                    )
-                  ],
+                Center(
+                  child: const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            "****",
+                            style: TextStyle(
+                                fontSize: 23,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "****",
+                            style: TextStyle(
+                                fontSize: 23,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "****",
+                            style: TextStyle(
+                                fontSize: 23,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "5963",
+                            style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black),
+                          ),
+                        ],
+                      ),
+                      Text(
+                        "Expires 09/30",
+                        style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),
