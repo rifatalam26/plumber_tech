@@ -137,6 +137,50 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 )
               ],
             ),
+          ),
+          const SizedBox(
+            height: 300,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "dataTotal Service Fee ",
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff192A48)),
+              ),
+              SizedBox(
+                width: 105,
+              ),
+              Text(
+                "\$40",
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff192A48)),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          Container(
+            height: 50,
+            width: 320,
+            decoration: BoxDecoration(
+              color: const Color(0xff0253A2),
+              borderRadius: BorderRadius.circular(25),
+            ),
+            child: const Center(
+              child: Text(
+                "Proceed to Checkout",
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
           )
         ],
       ),
