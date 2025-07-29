@@ -77,7 +77,10 @@ class _PaymentScreenState extends State<PaymentScreen> {
                       image: DecorationImage(
                           image:
                               AssetImage("assets/image/Frame 2147224249.png"))),
-                )
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
               ],
             ),
           )
