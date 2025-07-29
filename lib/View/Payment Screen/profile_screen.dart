@@ -95,8 +95,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(width: 1.5, color: const Color(0xff798090))),
-            child:  const Row(
+            child: const Row(
               children: [
+                SizedBox(
+                  width: 20,
+                ),
                 Text(
                   "****",
                   style: TextStyle(
@@ -137,6 +140,101 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ],
             ),
           ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "Expiry Date",
+                style: TextStyle(fontSize: 16, color: Color(0xff192A48)),
+              ),
+              SizedBox(
+                width: 85,
+              ),
+              Text(
+                "CVV",
+                style: TextStyle(fontSize: 16, color: Color(0xff192A48)),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              const SizedBox(
+                width: 20,
+              ),
+              Container(
+                height: 60,
+                width: 155,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border:
+                        Border.all(width: 1.5, color: const Color(0xff798090))),
+                child: const Row(
+                  children: [
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      "12/30",
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Container(
+                height: 60,
+                width: 155,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border:
+                        Border.all(width: 1.5, color: const Color(0xff798090))),
+                child: const Row(
+                  children: [
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      "****",
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 250,
+          ),
+          Container(
+            height: 50,
+            width: 320,
+            decoration: BoxDecoration(
+              color: const Color(0xff0253A2),
+              borderRadius: BorderRadius.circular(25),
+            ),
+            child: const Center(
+              child: Text(
+                "Save",
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
+          )
         ],
       ),
     );
