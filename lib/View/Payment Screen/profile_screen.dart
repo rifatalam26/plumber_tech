@@ -16,7 +16,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           const SizedBox(
             height: 50,
           ),
-          Row(
+          const Row(
             children: [
               SizedBox(
                 width: 20,
@@ -39,6 +39,103 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ),
           const SizedBox(
             height: 50,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "Cardholder Name",
+                style: TextStyle(fontSize: 16, color: Color(0xff192A48)),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 60,
+            width: 320,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(width: 1.5, color: const Color(0xff798090))),
+            child: const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "hakim jon",
+                  style: TextStyle(fontSize: 16, color: Color(0xff192A48)),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "Card Number",
+                style: TextStyle(fontSize: 16, color: Color(0xff192A48)),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 60,
+            width: 320,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(width: 1.5, color: const Color(0xff798090))),
+            child:  const Row(
+              children: [
+                Text(
+                  "****",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "****",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "****",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "5963",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+              ],
+            ),
           ),
         ],
       ),
