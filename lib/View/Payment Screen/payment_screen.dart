@@ -81,6 +81,24 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 const SizedBox(
                   width: 10,
                 ),
+                const Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          "****",
+                          style: TextStyle(
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black),
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                      ],
+                    )
+                  ],
+                )
               ],
             ),
           )
