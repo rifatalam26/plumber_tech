@@ -36,8 +36,22 @@ class _PaymentSuccessfulScreenState extends State<PaymentSuccessfulScreen> {
                       image: AssetImage("assets/image/Frame 1618873669.png"))),
             ),
             const SizedBox(
-              height: 200,
+              height: 230,
             ),
+            Container(
+              height: 50,
+              width: 320,
+              decoration: BoxDecoration(
+                color: const Color(0xff0253A2),
+                borderRadius: BorderRadius.circular(25),
+              ),
+              child: const Center(
+                child: Text(
+                  "Back to Home",
+                  style: TextStyle(fontSize: 14, color: Colors.white),
+                ),
+              ),
+            )
           ],
         ),
       ),
