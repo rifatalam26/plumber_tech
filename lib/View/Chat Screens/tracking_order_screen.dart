@@ -38,10 +38,10 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
             ],
           ),
           const SizedBox(
-            height: 377,
+            height: 347,
           ),
           Container(
-            height: 350,
+            height: 380,
             decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -183,7 +183,58 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                                   "assets/image/Chat icon.png"))),
                     ),
                   ],
-                )
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                Row(
+                  children: [
+                    const SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      height: 60,
+                      width: 60,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              //fit: BoxFit.cover,
+                              image: AssetImage("assets/image/Frame 2147224229.png"))),
+                    ),
+                    const SizedBox(
+                      width: 30,
+                    ),
+                    Container(
+                      height: 60,
+                      width: 60,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            //fit: BoxFit.cover,
+                              image: AssetImage("assets/image/Frame 2147224229.png"))),
+                    ),
+                    const SizedBox(
+                      width: 30,
+                    ),
+                    Container(
+                      height: 60,
+                      width: 60,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            //fit: BoxFit.cover,
+                              image: AssetImage("assets/image/Frame 2147224229.png"))),
+                    ),
+                    const SizedBox(
+                      width: 30,
+                    ),
+                    Container(
+                      height: 60,
+                      width: 60,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            //fit: BoxFit.cover,
+                              image: AssetImage("assets/image/Frame 2147224229.png"))),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
