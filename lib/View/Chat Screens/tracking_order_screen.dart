@@ -89,6 +89,100 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                       ],
                     )
                   ],
+                ),
+                const Text(
+                  "20 min",
+                  style: TextStyle(
+                      fontSize: 36,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff1768B7)),
+                ),
+                const Text(
+                  "Time limit of call",
+                  style: TextStyle(fontSize: 16, color: Color(0xff515868)),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                Row(
+                  children: [
+                    const SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      height: 60,
+                      width: 60,
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 2, color: const Color(0xff024F9E)),
+                          borderRadius: BorderRadius.circular(100),
+                          image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/image/Profile Image.png"))),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    const Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Refrigerator Repair",
+                          style: TextStyle(
+                              fontSize: 14,
+                              color: Color(0xff192A48),
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "Milan Jack",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Color(0xff3B4252),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 35,
+                      width: 35,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/image/Group 8293.png"))),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 35,
+                      width: 35,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/image/Group (4).png"))),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 35,
+                      width: 35,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/image/Chat icon.png"))),
+                    ),
+                  ],
                 )
               ],
             ),
