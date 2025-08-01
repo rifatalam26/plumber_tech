@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plumber_tech/View/Payment%20Screen/payment_successful_screen.dart';
 import 'View/Payment Screen/profile_screen.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProfileScreen(),
+      home: PaymentSuccessfulScreen(),
     );
   }
 }
