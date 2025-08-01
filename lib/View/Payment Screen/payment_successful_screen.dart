@@ -16,17 +16,27 @@ class _PaymentSuccessfulScreenState extends State<PaymentSuccessfulScreen> {
         child: Column(
           children: [
             const SizedBox(
-              height: 50,
+              height: 60,
             ),
-            Text(
-              "ADD Card",
+            const Text(
+              "Payment Successful",
               style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Color(0xff192A48)),
             ),
             const SizedBox(
-              height: 50,
+              height: 200,
+            ),
+            Container(
+              height: 180,
+              width: 180,
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/image/Frame 1618873669.png"))),
+            ),
+            const SizedBox(
+              height: 200,
             ),
           ],
         ),
