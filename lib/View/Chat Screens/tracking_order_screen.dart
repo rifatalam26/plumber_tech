@@ -216,11 +216,11 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                     ),
                     Container(
                       height: 60,
-                      width: 60,
+                      width: 70,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
                             //fit: BoxFit.cover,
-                              image: AssetImage("assets/image/Frame 2147224229.png"))),
+                              image: AssetImage("assets/image/Frame 2147224232.png"))),
                     ),
                     const SizedBox(
                       width: 30,
