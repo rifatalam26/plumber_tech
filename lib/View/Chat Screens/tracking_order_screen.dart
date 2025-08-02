@@ -223,7 +223,7 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                               image: AssetImage("assets/image/Frame 2147224232.png"))),
                     ),
                     const SizedBox(
-                      width: 30,
+                      width: 20,
                     ),
                     Container(
                       height: 60,
