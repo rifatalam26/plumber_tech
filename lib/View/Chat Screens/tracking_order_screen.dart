@@ -215,7 +215,7 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                       width: 30,
                     ),
                     Container(
-                      height: 60,
+                      height: 70,
                       width: 70,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
