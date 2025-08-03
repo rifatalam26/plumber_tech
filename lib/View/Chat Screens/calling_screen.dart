@@ -16,6 +16,14 @@ class _CallingScreenState extends State<CallingScreen> {
           SizedBox(
             height: 500,
           ),
+        Container(
+          height: 80,
+          width: 80,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(100),
+            image: const DecorationImage(image: AssetImage("assets/image/image 2181.png"))
+          ),
+        )
         ],
       ),
     );
