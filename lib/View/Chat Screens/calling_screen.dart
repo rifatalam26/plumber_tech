@@ -12,7 +12,11 @@ class _CallingScreenState extends State<CallingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: [
+          SizedBox(
+            height: 500,
+          ),
+        ],
       ),
     );
   }
