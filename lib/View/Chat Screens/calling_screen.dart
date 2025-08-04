@@ -21,6 +21,13 @@ class _CallingScreenState extends State<CallingScreen> {
               radius: 40,
               //backgroundColor: Colors.blue,
               backgroundImage: AssetImage("assets/image/image 2181.png"),
+            ),
+            Text(
+              "Milan Jack",
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xff192A48)),
             )
           ],
         ),
