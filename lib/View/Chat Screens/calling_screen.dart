@@ -13,17 +13,22 @@ class _CallingScreenState extends State<CallingScreen> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 500,
           ),
-        Container(
-          height: 80,
-          width: 80,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(100),
-            image: const DecorationImage(image: AssetImage("assets/image/image 2181.png"))
-          ),
-        )
+          // Container(
+          //   height: 80,
+          //   width: 80,
+          //   decoration: BoxDecoration(
+          //       borderRadius: BorderRadius.circular(100),
+          //       image: const DecorationImage(
+          //           image: AssetImage("assets/image/image 2181.png"))),
+          // )
+          CircleAvatar(
+            radius: 40,
+            //backgroundColor: Colors.blue,
+            backgroundImage: AssetImage("assets/image/image 2181.png"),
+          )
         ],
       ),
     );
