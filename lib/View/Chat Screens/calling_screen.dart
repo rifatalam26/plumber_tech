@@ -38,12 +38,21 @@ class _CallingScreenState extends State<CallingScreen> {
                   fontSize: 16,
                   color: Color(0xff3B4252)),
             ),
+            const SizedBox(
+              height: 25,
+            ),
             Row(
               children: [
+                SizedBox(
+                  width: 30,
+                ),
                 CircleAvatar(
-                  radius: 25,
+                  radius: 30,
                   backgroundImage: AssetImage("assets/image/Mute.png"),
-                )
+                ),
+                SizedBox(
+                  width: 30,
+                ),
               ],
             )
           ],
