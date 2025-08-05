@@ -18,7 +18,7 @@ class _CallingScreenState extends State<CallingScreen> {
               height: 500,
             ),
             CircleAvatar(
-              radius: 40,
+              radius: 50,
               //backgroundColor: Colors.blue,
               backgroundImage: AssetImage("assets/image/image 2181.png"),
             ),
@@ -37,6 +37,14 @@ class _CallingScreenState extends State<CallingScreen> {
               style: TextStyle(
                   fontSize: 16,
                   color: Color(0xff3B4252)),
+            ),
+            Row(
+              children: [
+                CircleAvatar(
+                  radius: 25,
+                  backgroundImage: AssetImage("assets/image/Mute.png"),
+                )
+              ],
             )
           ],
         ),
