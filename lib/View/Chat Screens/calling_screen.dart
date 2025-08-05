@@ -17,7 +17,7 @@ class _CallingScreenState extends State<CallingScreen> {
             const SizedBox(
               height: 500,
             ),
-            CircleAvatar(
+            const CircleAvatar(
               radius: 50,
               //backgroundColor: Colors.blue,
               backgroundImage: AssetImage("assets/image/image 2181.png"),
@@ -25,14 +25,14 @@ class _CallingScreenState extends State<CallingScreen> {
             const SizedBox(
               height: 15,
             ),
-            Text(
+            const Text(
               "Milan Jack",
               style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                   color: Color(0xff192A48)),
             ),
-            Text(
+            const Text(
               "Plumber Engineer",
               style: TextStyle(fontSize: 16, color: Color(0xff3B4252)),
             ),
@@ -41,24 +41,24 @@ class _CallingScreenState extends State<CallingScreen> {
             ),
             Row(
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 30,
                 ),
-                CircleAvatar(
-                  radius: 30,
+                const CircleAvatar(
+                  radius: 28,
                   backgroundImage: AssetImage("assets/image/Mute.png"),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 30,
                 ),
                 Stack(
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 50,
                       backgroundImage:
                           AssetImage("assets/image/Ellipse 1329.png"),
                     ),
-                    Positioned(
+                    const Positioned(
                       left: 10,
                       top: 10,
                       child: CircleAvatar(
@@ -67,7 +67,7 @@ class _CallingScreenState extends State<CallingScreen> {
                             AssetImage("assets/image/Ellipse 1328.png"),
                       ),
                     ),
-                    Positioned(
+                    const Positioned(
                       left: 20,
                       top: 20,
                       child: CircleAvatar(
@@ -77,20 +77,27 @@ class _CallingScreenState extends State<CallingScreen> {
                       ),
                     ),
                     Positioned(
-                      left: 30,
-                      top: 30,
+                      left: 38,
+                      top: 38,
                       child: Container(
-                        height: 20,
-                        width: 20,
+                        height: 25,
+                        width: 25,
                         decoration: const BoxDecoration(
                             image: DecorationImage(
-                              fit: BoxFit.cover,
+                                fit: BoxFit.cover,
                                 image:
                                     AssetImage("assets/image/phone-call.png"))),
                       ),
                     )
                   ],
-                )
+                ),
+                const SizedBox(
+                  width: 30,
+                ),
+                const CircleAvatar(
+                  radius: 28,
+                  backgroundImage: AssetImage("assets/image/volume-1.png"),
+                ),
               ],
             )
           ],
