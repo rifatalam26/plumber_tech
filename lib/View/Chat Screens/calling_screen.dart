@@ -73,7 +73,20 @@ class _CallingScreenState extends State<CallingScreen> {
                       child: CircleAvatar(
                         radius: 30,
                         backgroundImage:
-                        AssetImage("assets/image/Ellipse 1294.png"),
+                            AssetImage("assets/image/Ellipse 1294.png"),
+                      ),
+                    ),
+                    Positioned(
+                      left: 30,
+                      top: 30,
+                      child: Container(
+                        height: 20,
+                        width: 20,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                                image:
+                                    AssetImage("assets/image/phone-call.png"))),
                       ),
                     )
                   ],
