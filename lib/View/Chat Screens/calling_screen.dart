@@ -34,9 +34,7 @@ class _CallingScreenState extends State<CallingScreen> {
             ),
             Text(
               "Plumber Engineer",
-              style: TextStyle(
-                  fontSize: 16,
-                  color: Color(0xff3B4252)),
+              style: TextStyle(fontSize: 16, color: Color(0xff3B4252)),
             ),
             const SizedBox(
               height: 25,
@@ -53,6 +51,33 @@ class _CallingScreenState extends State<CallingScreen> {
                 SizedBox(
                   width: 30,
                 ),
+                Stack(
+                  children: [
+                    CircleAvatar(
+                      radius: 50,
+                      backgroundImage:
+                          AssetImage("assets/image/Ellipse 1329.png"),
+                    ),
+                    Positioned(
+                      left: 10,
+                      top: 10,
+                      child: CircleAvatar(
+                        radius: 40,
+                        backgroundImage:
+                            AssetImage("assets/image/Ellipse 1328.png"),
+                      ),
+                    ),
+                    Positioned(
+                      left: 20,
+                      top: 20,
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundImage:
+                        AssetImage("assets/image/Ellipse 1294.png"),
+                      ),
+                    )
+                  ],
+                )
               ],
             )
           ],
