@@ -8,9 +8,41 @@ class TrackingOrderScreen extends StatefulWidget {
 }
 
 class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
+  int selectedIndex = 0;
+  void _onItemTapped(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
+  }
+  // BottomNavigationBar Items
+  final List<BottomNavigationBarItem> _bottomItems = const [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home),
+      label: 'Home',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.chat),
+      label: 'Chat',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.notifications),
+      label: 'Notification',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.person),
+      label: 'Profile',
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+          items: _bottomItems,
+        currentIndex: selectedIndex,
+        selectedItemColor: const Color(0xff1768B7),
+        unselectedItemColor: Colors.grey,
+        onTap:  _onItemTapped,
+      ),
       body: Column(
         children: [
           const SizedBox(
@@ -38,7 +70,7 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
             ],
           ),
           const SizedBox(
-            height: 347,
+            height: 289,
           ),
           Container(
             height: 380,
@@ -153,8 +185,8 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                           borderRadius: BorderRadius.circular(100),
                           image: const DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage(
-                                  "assets/image/Group 8293.png"))),
+                              image:
+                                  AssetImage("assets/image/Group 8293.png"))),
                     ),
                     const SizedBox(
                       width: 10,
@@ -166,8 +198,7 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                           borderRadius: BorderRadius.circular(100),
                           image: const DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage(
-                                  "assets/image/Group (4).png"))),
+                              image: AssetImage("assets/image/Group (4).png"))),
                     ),
                     const SizedBox(
                       width: 10,
@@ -179,8 +210,7 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                           borderRadius: BorderRadius.circular(100),
                           image: const DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage(
-                                  "assets/image/Chat icon.png"))),
+                              image: AssetImage("assets/image/Chat icon.png"))),
                     ),
                   ],
                 ),
@@ -198,7 +228,8 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                       decoration: const BoxDecoration(
                           image: DecorationImage(
                               //fit: BoxFit.cover,
-                              image: AssetImage("assets/image/Frame 2147224229.png"))),
+                              image: AssetImage(
+                                  "assets/image/Frame 2147224229.png"))),
                     ),
                     const SizedBox(
                       width: 30,
@@ -208,8 +239,9 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                       width: 60,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                            //fit: BoxFit.cover,
-                              image: AssetImage("assets/image/Frame 2147224230.png"))),
+                              //fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/image/Frame 2147224230.png"))),
                     ),
                     const SizedBox(
                       width: 30,
@@ -219,8 +251,9 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                       width: 70,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                            //fit: BoxFit.cover,
-                              image: AssetImage("assets/image/Frame 2147224232.png"))),
+                              //fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/image/Frame 2147224232.png"))),
                     ),
                     const SizedBox(
                       width: 20,
@@ -230,8 +263,9 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                       width: 60,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                            //fit: BoxFit.cover,
-                              image: AssetImage("assets/image/Frame 2147224233.png"))),
+                              //fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/image/Frame 2147224233.png"))),
                     ),
                   ],
                 ),
@@ -243,3 +277,5 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
     );
   }
 }
+
+

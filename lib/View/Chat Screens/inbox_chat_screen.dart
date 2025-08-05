@@ -78,8 +78,7 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                     borderRadius: BorderRadius.circular(100),
                     image: const DecorationImage(
                         fit: BoxFit.cover,
-                        image: AssetImage(
-                            "assets/image/Group (4).png"))),
+                        image: AssetImage("assets/image/Group (4).png"))),
               ),
               const SizedBox(
                 width: 10,
@@ -91,10 +90,16 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                     borderRadius: BorderRadius.circular(100),
                     image: const DecorationImage(
                         fit: BoxFit.cover,
-                        image: AssetImage(
-                            "assets/image/Frame (10).png"))),
+                        image: AssetImage("assets/image/Frame (10).png"))),
               ),
             ],
+          ),
+          const SizedBox(
+            height: 40,
+          ),
+          Container(
+            height: 2,
+            color: const Color(0xffC8C9CD),
           ),
         ],
       ),
