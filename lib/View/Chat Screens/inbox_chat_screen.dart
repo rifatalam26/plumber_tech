@@ -102,9 +102,19 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
             color: const Color(0xffC8C9CD),
           ),
           const SizedBox(
-            height: 40,
+            height: 25,
           ),
-          Text("04:45 PM",style: TextStyle(fontSize: 12,color: Color(0xff4B5566)),)
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "04:45 PM",
+                style: TextStyle(fontSize: 12, color: Color(0xff4B5566)),
+              ),
+            ],
+          )
         ],
       ),
     );
