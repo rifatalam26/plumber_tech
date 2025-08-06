@@ -101,6 +101,7 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
             height: 2,
             color: const Color(0xffC8C9CD),
           ),
+
         ],
       ),
     );
