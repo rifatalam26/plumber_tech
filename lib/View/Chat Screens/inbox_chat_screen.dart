@@ -107,14 +107,18 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
           const Row(
             children: [
               SizedBox(
-                width: 22,
+                width: 20,
               ),
               Text(
                 "04:45 PM",
                 style: TextStyle(fontSize: 12, color: Color(0xff4B5566)),
               ),
             ],
-          )
+          ),
+          const SizedBox(
+            height: 5,
+          ),
+
         ],
       ),
     );
