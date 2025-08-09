@@ -118,7 +118,9 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
           const SizedBox(
             height: 5,
           ),
-
+          Row(
+            children: [],
+          )
         ],
       ),
     );
