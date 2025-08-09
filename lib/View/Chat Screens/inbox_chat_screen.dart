@@ -121,7 +121,9 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
           Row(
             children: [
               Container(
-
+                height: 30,
+                width: 100,
+                decoration: BoxDecoration(),
               )
             ],
           )
