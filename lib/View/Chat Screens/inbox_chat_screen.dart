@@ -119,37 +119,59 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
             height: 5,
           ),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               const SizedBox(
-                width: 100,
+                width: 55,
               ),
               Container(
-                height: 130,
+                height: 120,
                 width: 240,
                 decoration: const BoxDecoration(
                     color: Color(0xffEAF3FC),
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                child: const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Hello, Mr. Johnson.",
-                      style: TextStyle(fontSize: 15, color: Color(0xff3B4252)),
-                    ),
-                    Text(
-                      "I’m developing a sustainable",
-                      style: TextStyle(fontSize: 15, color: Color(0xff3B4252)),
-                    ),
-                    Text(
-                      "agriculture platform connecting ",
-                      style: TextStyle(fontSize: 15, color: Color(0xff3B4252)),
-                    ),
-                    Text(
-                      "farmers directly with consumers",
-                      style: TextStyle(fontSize: 15, color: Color(0xff3B4252)),
-                    ),
-                  ],
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(20),
+                        topLeft: Radius.circular(20),
+                        bottomLeft: Radius.circular(20))),
+                child: const Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        height: 7,
+                      ),
+                      Text(
+                        "Hello, Mr. Johnson.",
+                        style:
+                            TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                      ),
+                      Text(
+                        "I’m developing a sustainable",
+                        style:
+                            TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                      ),
+                      Text(
+                        "agriculture platform connecting ",
+                        style:
+                            TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                      ),
+                      Text(
+                        "farmers directly with consumers",
+                        style:
+                            TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                      ),
+                    ],
+                  ),
                 ),
+              ),
+              const SizedBox(
+                width: 8,
+              ),
+              const CircleAvatar(
+                radius: 22,
+                backgroundImage:
+                    AssetImage("assets/image/Ellipse 3270 (1).png"),
               )
             ],
           )
