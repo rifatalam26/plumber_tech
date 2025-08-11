@@ -124,17 +124,30 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                 width: 100,
               ),
               Container(
-                height: 100,
-                width: 200,
+                height: 130,
+                width: 240,
                 decoration: const BoxDecoration(
                     color: Color(0xffEAF3FC),
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "Hello, Mr. Johnson.",
                       style: TextStyle(fontSize: 15, color: Color(0xff3B4252)),
-                    )
+                    ),
+                    Text(
+                      "I’m developing a sustainable",
+                      style: TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                    ),
+                    Text(
+                      "agriculture platform connecting ",
+                      style: TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                    ),
+                    Text(
+                      "farmers directly with consumers",
+                      style: TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                    ),
                   ],
                 ),
               )
