@@ -120,10 +120,23 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
           ),
           Row(
             children: [
-              Container(
-                height: 30,
+              const SizedBox(
                 width: 100,
-                decoration: BoxDecoration(),
+              ),
+              Container(
+                height: 100,
+                width: 200,
+                decoration: const BoxDecoration(
+                    color: Color(0xffEAF3FC),
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                child: const Column(
+                  children: [
+                    Text(
+                      "Hello, Mr. Johnson.",
+                      style: TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                    )
+                  ],
+                ),
               )
             ],
           )
