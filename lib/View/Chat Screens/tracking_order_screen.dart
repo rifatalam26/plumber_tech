@@ -14,6 +14,7 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
       selectedIndex = index;
     });
   }
+
   // BottomNavigationBar Items
   final List<BottomNavigationBarItem> _bottomItems = const [
     BottomNavigationBarItem(
@@ -37,11 +38,11 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-          items: _bottomItems,
+        items: _bottomItems,
         currentIndex: selectedIndex,
         selectedItemColor: const Color(0xff1768B7),
         unselectedItemColor: Colors.grey,
-        onTap:  _onItemTapped,
+        onTap: _onItemTapped,
       ),
       body: Column(
         children: [
@@ -277,5 +278,3 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
     );
   }
 }
-
-
