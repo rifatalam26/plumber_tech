@@ -13,10 +13,29 @@ class _TestState extends State<Test> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 500,
           ),
-
+          Row(
+            children: [
+              const SizedBox(
+                width: 20,
+              ),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+              const SizedBox(
+                width: 20,
+              ),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.contact_phone)),
+              const SizedBox(
+                width: 20,
+              ),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.chat)),
+              const SizedBox(
+                width: 20,
+              ),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
+            ],
+          )
         ],
       ),
     );
