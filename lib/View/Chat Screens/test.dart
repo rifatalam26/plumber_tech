@@ -14,14 +14,19 @@ class _TestState extends State<Test> {
       body: Column(
         children: [
           const SizedBox(
-            height: 500,
+            height: 200,
           ),
           Row(
             children: [
               const SizedBox(
-                width: 40,
+                width: 50,
               ),
-              IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
+              IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.home,
+                    color: Colors.blue,
+                  )),
               const SizedBox(
                 width: 20,
               ),
