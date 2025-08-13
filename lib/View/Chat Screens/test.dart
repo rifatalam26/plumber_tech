@@ -19,13 +19,14 @@ class _TestState extends State<Test> {
           Row(
             children: [
               const SizedBox(
-                width: 20,
+                width: 40,
               ),
               IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
               const SizedBox(
                 width: 20,
               ),
-              IconButton(onPressed: () {}, icon: const Icon(Icons.contact_phone)),
+              IconButton(
+                  onPressed: () {}, icon: const Icon(Icons.notifications)),
               const SizedBox(
                 width: 20,
               ),
