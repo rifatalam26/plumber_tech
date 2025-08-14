@@ -8,42 +8,10 @@ class TrackingOrderScreen extends StatefulWidget {
 }
 
 class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
-  int selectedIndex = 0;
-  void _onItemTapped(int index) {
-    setState(() {
-      selectedIndex = index;
-    });
-  }
 
-  // BottomNavigationBar Items
-  final List<BottomNavigationBarItem> _bottomItems = const [
-    BottomNavigationBarItem(
-      icon: Icon(Icons.home),
-      label: 'Home',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.chat),
-      label: 'Chat',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.notifications),
-      label: 'Notification',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.person),
-      label: 'Profile',
-    ),
-  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        items: _bottomItems,
-        currentIndex: selectedIndex,
-        selectedItemColor: const Color(0xff1768B7),
-        unselectedItemColor: Colors.grey,
-        onTap: _onItemTapped,
-      ),
       body: Column(
         children: [
           const SizedBox(
