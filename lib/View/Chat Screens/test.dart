@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plumber_tech/View/Home%20screens/home_page.dart';
 
 class Test extends StatefulWidget {
   const Test({super.key});
@@ -19,10 +20,11 @@ class _TestState extends State<Test> {
           Row(
             children: [
               const SizedBox(width: 50),
-
               // Home
               IconButton(
                 onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context)=>const HomePage()));
                   setState(() {
                     selectedIndex = 0;
                   });
@@ -32,9 +34,7 @@ class _TestState extends State<Test> {
                   color: selectedIndex == 0 ? Colors.blue : Colors.grey,
                 ),
               ),
-
               const SizedBox(width: 20),
-
               // Notifications
               IconButton(
                 onPressed: () {
@@ -47,9 +47,7 @@ class _TestState extends State<Test> {
                   color: selectedIndex == 1 ? Colors.blue : Colors.grey,
                 ),
               ),
-
               const SizedBox(width: 20),
-
               // Chat
               IconButton(
                 onPressed: () {
@@ -62,9 +60,7 @@ class _TestState extends State<Test> {
                   color: selectedIndex == 2 ? Colors.blue : Colors.grey,
                 ),
               ),
-
               const SizedBox(width: 20),
-
               // Profile
               IconButton(
                 onPressed: () {
