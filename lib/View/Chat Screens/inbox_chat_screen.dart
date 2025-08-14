@@ -240,6 +240,77 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                 ),
               ],
             ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 70,
+                ),
+                Text(
+                  "04:45 PM",
+                  style: TextStyle(fontSize: 12, color: Color(0xff4B5566)),
+                ),
+              ],
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                const SizedBox(
+                  width: 55,
+                ),
+                Container(
+                  height: 120,
+                  width: 240,
+                  decoration: const BoxDecoration(
+                      color: Color(0xffEAF3FC),
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(20),
+                          topLeft: Radius.circular(20),
+                          bottomLeft: Radius.circular(20))),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          height: 7,
+                        ),
+                        Text(
+                          "Hello, Mr. Johnson.",
+                          style:
+                          TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                        ),
+                        Text(
+                          "I’m developing a sustainable",
+                          style:
+                          TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                        ),
+                        Text(
+                          "agriculture platform connecting ",
+                          style:
+                          TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                        ),
+                        Text(
+                          "farmers directly with consumers",
+                          style:
+                          TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 8,
+                ),
+                const CircleAvatar(
+                  radius: 22,
+                  backgroundImage:
+                  AssetImage("assets/image/Ellipse 3270 (1).png"),
+                )
+              ],
+            ),
           ],
         ),
       ),
