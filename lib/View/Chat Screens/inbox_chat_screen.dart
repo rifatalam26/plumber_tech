@@ -311,6 +311,70 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                 )
               ],
             ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 230,
+                ),
+                Text(
+                  "04:45 PM",
+                  style: TextStyle(fontSize: 12, color: Color(0xff4B5566)),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                const SizedBox(
+                  width: 13,
+                ),
+                const CircleAvatar(
+                  radius: 22,
+                  backgroundImage:
+                  AssetImage("assets/image/Profile Image.png"),
+                ),
+                const SizedBox(
+                  width: 8,
+                ),
+                Container(
+                  height: 75,
+                  width: 240,
+                  decoration: const BoxDecoration(
+                      color: Color(0xff104190),
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(20),
+                          topLeft: Radius.circular(20),
+                          bottomRight: Radius.circular(20))),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          height: 7,
+                        ),
+                        Text(
+                          "interesting. What your project",
+                          style:
+                          TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
+                        ),
+                        Text(
+                          "apart?",
+                          style:
+                          TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
