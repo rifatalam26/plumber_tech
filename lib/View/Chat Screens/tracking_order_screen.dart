@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plumber_tech/View/Chat%20Screens/inbox_chat_screen.dart';
 
 class TrackingOrderScreen extends StatefulWidget {
   const TrackingOrderScreen({super.key});
@@ -8,7 +9,6 @@ class TrackingOrderScreen extends StatefulWidget {
 }
 
 class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +39,7 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
             ],
           ),
           const SizedBox(
-            height: 289,
+            height: 347,
           ),
           Container(
             height: 380,
@@ -172,14 +172,23 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                     const SizedBox(
                       width: 10,
                     ),
-                    Container(
-                      height: 35,
-                      width: 35,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                          image: const DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage("assets/image/Chat icon.png"))),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const InboxChatScreen()));
+                      },
+                      child: Container(
+                        height: 35,
+                        width: 35,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            image: const DecorationImage(
+                                fit: BoxFit.cover,
+                                image:
+                                    AssetImage("assets/image/Chat icon.png"))),
+                      ),
                     ),
                   ],
                 ),

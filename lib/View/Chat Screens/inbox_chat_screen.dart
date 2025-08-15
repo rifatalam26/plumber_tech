@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plumber_tech/View/Chat%20Screens/tracking_order_screen.dart';
 
 class InboxChatScreen extends StatefulWidget {
   const InboxChatScreen({super.key});
@@ -23,7 +24,13 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                   width: 5,
                 ),
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const TrackingOrderScreen()));
+                    },
                     icon: const Icon(
                       Icons.arrow_back,
                       size: 30,
