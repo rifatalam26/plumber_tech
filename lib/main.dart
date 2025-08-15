@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plumber_tech/View/Chat%20Screens/inbox_chat_screen_2.dart';
 
 import 'View/Chat Screens/inbox_chat_screen.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: InboxChatScreen(),
+      home: InboxChatScreen2(),
     );
   }
 }

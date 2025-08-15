@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plumber_tech/View/Chat%20Screens/calling_screen.dart';
 import 'package:plumber_tech/View/Chat%20Screens/inbox_chat_screen.dart';
 
 class TrackingOrderScreen extends StatefulWidget {
@@ -147,15 +148,23 @@ class _TrackingOrderScreenState extends State<TrackingOrderScreen> {
                     const SizedBox(
                       width: 10,
                     ),
-                    Container(
-                      height: 35,
-                      width: 35,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                          image: const DecorationImage(
-                              fit: BoxFit.cover,
-                              image:
-                                  AssetImage("assets/image/Group 8293.png"))),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CallingScreen()));
+                      },
+                      child: Container(
+                        height: 35,
+                        width: 35,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            image: const DecorationImage(
+                                fit: BoxFit.cover,
+                                image:
+                                    AssetImage("assets/image/Group 8293.png"))),
+                      ),
                     ),
                     const SizedBox(
                       width: 10,
