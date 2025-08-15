@@ -375,6 +375,19 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                 ),
               ],
             ),
+            const SizedBox(
+              height: 50,
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30)
+                ),
+                focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30)
+                ),
+              ),
+            )
           ],
         ),
       ),
