@@ -201,8 +201,7 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                 ),
                 const CircleAvatar(
                   radius: 22,
-                  backgroundImage:
-                  AssetImage("assets/image/Profile Image.png"),
+                  backgroundImage: AssetImage("assets/image/Profile Image.png"),
                 ),
                 const SizedBox(
                   width: 8,
@@ -227,12 +226,12 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                         Text(
                           "interesting. What your project",
                           style:
-                          TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
+                              TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
                         ),
                         Text(
                           "apart?",
                           style:
-                          TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
+                              TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
                         ),
                       ],
                     ),
@@ -280,22 +279,22 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                         Text(
                           "Hello, Mr. Johnson.",
                           style:
-                          TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                              TextStyle(fontSize: 15, color: Color(0xff3B4252)),
                         ),
                         Text(
                           "I’m developing a sustainable",
                           style:
-                          TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                              TextStyle(fontSize: 15, color: Color(0xff3B4252)),
                         ),
                         Text(
                           "agriculture platform connecting ",
                           style:
-                          TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                              TextStyle(fontSize: 15, color: Color(0xff3B4252)),
                         ),
                         Text(
                           "farmers directly with consumers",
                           style:
-                          TextStyle(fontSize: 15, color: Color(0xff3B4252)),
+                              TextStyle(fontSize: 15, color: Color(0xff3B4252)),
                         ),
                       ],
                     ),
@@ -307,7 +306,7 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                 const CircleAvatar(
                   radius: 22,
                   backgroundImage:
-                  AssetImage("assets/image/Ellipse 3270 (1).png"),
+                      AssetImage("assets/image/Ellipse 3270 (1).png"),
                 )
               ],
             ),
@@ -336,8 +335,7 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                 ),
                 const CircleAvatar(
                   radius: 22,
-                  backgroundImage:
-                  AssetImage("assets/image/Profile Image.png"),
+                  backgroundImage: AssetImage("assets/image/Profile Image.png"),
                 ),
                 const SizedBox(
                   width: 8,
@@ -362,12 +360,12 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
                         Text(
                           "interesting. What your project",
                           style:
-                          TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
+                              TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
                         ),
                         Text(
                           "apart?",
                           style:
-                          TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
+                              TextStyle(fontSize: 15, color: Color(0xffFFFFFF)),
                         ),
                       ],
                     ),
@@ -378,15 +376,38 @@ class _InboxChatScreenState extends State<InboxChatScreen> {
             const SizedBox(
               height: 50,
             ),
-            TextFormField(
-              decoration: InputDecoration(
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30)
+            Row(
+              children: [
+                const SizedBox(
+                  width: 15,
                 ),
-                focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30)
+                SizedBox(
+                  height: 50,
+                  width: 250,
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30),
+                            borderSide: const BorderSide(
+                                width: 2, color: Color(0xff798090))),
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30),
+                            borderSide: const BorderSide(
+                                width: 2, color: Color(0xff798090))),
+                        hintText: "Type a message",
+                        hintStyle: const TextStyle(
+                            fontSize: 15, color: Color(0xff798090))),
+                  ),
                 ),
-              ),
+                const SizedBox(
+                  width: 35,
+                ),
+                const CircleAvatar(
+                  radius: 22,
+                  backgroundImage:
+                      AssetImage("assets/image/Frame 1171276031.png"),
+                )
+              ],
             )
           ],
         ),
