@@ -18,7 +18,7 @@ class _VideoCallingScreenState extends State<VideoCallingScreen> {
                 image: AssetImage("assets/image/image 2205.png"))),
         child: Column(
           children: [
-            
+            Text("data")
           ],
         ),
       ),
