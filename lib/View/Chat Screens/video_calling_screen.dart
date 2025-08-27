@@ -18,6 +18,9 @@ class _VideoCallingScreenState extends State<VideoCallingScreen> {
                 image: AssetImage("assets/image/image 2205.png"))),
         child: Column(
           children: [
+            SizedBox(
+              height: 200,
+            ),
             Center(child: Text("Milan Jack",style: TextStyle(),))
           ],
         ),
