@@ -37,6 +37,37 @@ class _VideoCallingScreenState extends State<VideoCallingScreen> {
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
+                ),
+                SizedBox(
+                  height: 400,
+                ),
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 85,
+                    ),
+                    CircleAvatar(
+                      radius: 27,
+                      backgroundImage:
+                          AssetImage("assets/image/Group 24200.png"),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    CircleAvatar(
+                      radius: 27,
+                      backgroundImage:
+                          AssetImage("assets/image/Group 24197.png"),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    CircleAvatar(
+                      radius: 27,
+                      backgroundImage:
+                          AssetImage("assets/image/Group 24198.png"),
+                    ),
+                  ],
                 )
               ],
             ))
