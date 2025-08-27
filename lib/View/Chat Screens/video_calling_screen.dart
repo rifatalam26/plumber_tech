@@ -19,7 +19,7 @@ class _VideoCallingScreenState extends State<VideoCallingScreen> {
         child: const Column(
           children: [
             SizedBox(
-              height: 200,
+              height: 150,
             ),
             Center(
                 child: Column(
@@ -39,7 +39,7 @@ class _VideoCallingScreenState extends State<VideoCallingScreen> {
                       color: Colors.white),
                 ),
                 SizedBox(
-                  height: 400,
+                  height: 450,
                 ),
                 Row(
                   children: [
@@ -67,6 +67,20 @@ class _VideoCallingScreenState extends State<VideoCallingScreen> {
                       backgroundImage:
                           AssetImage("assets/image/Group 24198.png"),
                     ),
+                  ],
+                ),
+                SizedBox(
+                  height: 25,
+                ),
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 120,
+                    ),
+                    Text(
+                      "Swipe up to show chat",
+                      style: TextStyle(fontSize: 12, color: Colors.white),
+                    )
                   ],
                 )
               ],
