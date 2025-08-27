@@ -16,18 +16,29 @@ class _VideoCallingScreenState extends State<VideoCallingScreen> {
             image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage("assets/image/image 2205.png"))),
-        child: Column(
+        child: const Column(
           children: [
             SizedBox(
               height: 200,
             ),
             Center(
-                child: Text(
-              "Milan Jack",
-              style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),
+                child: Column(
+              children: [
+                Text(
+                  "Milan Jack",
+                  style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+                Text(
+                  "10:30:59",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                )
+              ],
             ))
           ],
         ),
