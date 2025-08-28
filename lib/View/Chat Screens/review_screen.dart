@@ -13,16 +13,30 @@ class _ReviewScreenState extends State<ReviewScreen> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
-              IconButton(onPressed: (){},
-                  icon: Icon(Icons.close,size: 26,))
+              IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.close,
+                    size: 26,
+                  )),
+              const SizedBox(
+                width: 25,
+              ),
+              const Text(
+                "Task Review",
+                style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff192A48)),
+              )
             ],
           )
         ],
