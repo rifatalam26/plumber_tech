@@ -18,9 +18,6 @@ class _ReviewScreenState extends State<ReviewScreen> {
           ),
           Row(
             children: [
-              const SizedBox(
-                width: 10,
-              ),
               IconButton(
                   onPressed: () {},
                   icon: const Icon(
@@ -28,7 +25,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     size: 26,
                   )),
               const SizedBox(
-                width: 25,
+                width: 50,
               ),
               const Text(
                 "Task Review",
