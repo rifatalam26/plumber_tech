@@ -35,10 +35,10 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     color: Color(0xff192A48)),
               ),
               const SizedBox(
-                width: 55,
+                width: 98,
               ),
               const CircleAvatar(
-                radius: 20,
+                radius: 16,
                 backgroundImage: AssetImage("assets/image/Frame (11).png"),
               )
             ],
