@@ -25,14 +25,21 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     size: 26,
                   )),
               const SizedBox(
-                width: 50,
+                width: 55,
               ),
               const Text(
                 "Task Review",
                 style: TextStyle(
-                    fontSize: 22,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Color(0xff192A48)),
+              ),
+              const SizedBox(
+                width: 55,
+              ),
+              const CircleAvatar(
+                radius: 20,
+                backgroundImage: AssetImage("assets/image/Frame (11).png"),
               )
             ],
           )
