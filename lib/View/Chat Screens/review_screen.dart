@@ -62,17 +62,61 @@ class _ReviewScreenState extends State<ReviewScreen> {
           ),
           Row(
             children: [
-              SizedBox(
-                width: 70,
+              const SizedBox(
+                width: 130,
               ),
               Container(
-                height: 20,
-                width: 20,
+                height: 15,
+                width: 15,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
                         image: AssetImage("assets/image/Star.png"))),
-              )
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Container(
+                height: 15,
+                width: 15,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/image/Star icon.png"))),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Container(
+                height: 15,
+                width: 15,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/image/Star icon (1).png"))),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Container(
+                height: 15,
+                width: 15,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/image/Star icon (2).png"))),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Container(
+                height: 15,
+                width: 15,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/image/Star icon (3).png"))),
+              ),
             ],
           )
         ],
