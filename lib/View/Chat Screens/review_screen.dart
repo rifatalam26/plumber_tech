@@ -58,7 +58,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                 color: Color(0xff192A48)),
           ),
           const SizedBox(
-            height: 20,
+            height: 16,
           ),
           Row(
             children: [
