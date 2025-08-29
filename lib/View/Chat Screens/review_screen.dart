@@ -63,7 +63,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
           Row(
             children: [
               const SizedBox(
-                width: 130,
+                width: 128,
               ),
               Container(
                 height: 15,
