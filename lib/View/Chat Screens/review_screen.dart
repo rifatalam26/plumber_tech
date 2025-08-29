@@ -62,10 +62,13 @@ class _ReviewScreenState extends State<ReviewScreen> {
           ),
           Row(
             children: [
+              SizedBox(
+                width: 70,
+              ),
               Container(
-                height: 10,
-                width: 10,
-                decoration: BoxDecoration(
+                height: 20,
+                width: 20,
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
                         image: AssetImage("assets/image/Star.png"))),
