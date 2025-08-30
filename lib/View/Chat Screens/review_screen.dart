@@ -14,7 +14,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
       body: Column(
         children: [
           const SizedBox(
-            height: 30,
+            height: 40,
           ),
           Row(
             children: [
@@ -70,7 +70,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                 width: 15,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
-                      fit: BoxFit.cover,
+                        fit: BoxFit.cover,
                         image: AssetImage("assets/image/Star.png"))),
               ),
               const SizedBox(
@@ -117,6 +117,20 @@ class _ReviewScreenState extends State<ReviewScreen> {
                         fit: BoxFit.cover,
                         image: AssetImage("assets/image/Star icon (3).png"))),
               ),
+            ],
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "Detail Review",
+                style: TextStyle(fontSize: 14, color: Color(0xff444B5B)),
+              )
             ],
           )
         ],
