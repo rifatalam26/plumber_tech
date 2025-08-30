@@ -132,6 +132,16 @@ class _ReviewScreenState extends State<ReviewScreen> {
                 style: TextStyle(fontSize: 14, color: Color(0xff444B5B)),
               )
             ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Container(
+            height: 120,
+            width: 320,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                border: Border.all(color: const Color(0xff798090), width: 1.5)),
           )
         ],
       ),
