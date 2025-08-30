@@ -142,6 +142,25 @@ class _ReviewScreenState extends State<ReviewScreen> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 border: Border.all(color: const Color(0xff798090), width: 1.5)),
+            child: const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Great job, my pressure problem has been",
+                    style: TextStyle(fontSize: 14, color: Color(0xff594F44)),
+                  ),
+                  Text(
+                    "resolved, I keep coming back to this company!",
+                    style: TextStyle(fontSize: 14, color: Color(0xff594F44)),
+                  )
+                ],
+              ),
+            ),
           )
         ],
       ),
