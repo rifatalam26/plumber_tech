@@ -120,7 +120,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
             ],
           ),
           const SizedBox(
-            height: 16,
+            height: 20,
           ),
           const Row(
             children: [
