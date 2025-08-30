@@ -161,6 +161,22 @@ class _ReviewScreenState extends State<ReviewScreen> {
                 ],
               ),
             ),
+          ),
+          const SizedBox(
+            height: 340,
+          ),
+          Container(
+            height: 50,
+            width: 330,
+            decoration: BoxDecoration(
+                color: const Color(0xff034E9D),
+                borderRadius: BorderRadius.circular(25)),
+            child: const Center(
+              child: Text(
+                "Submit",
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
           )
         ],
       ),
