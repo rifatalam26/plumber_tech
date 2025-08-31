@@ -8,6 +8,14 @@ class ReviewScreen extends StatefulWidget {
 }
 
 class _ReviewScreenState extends State<ReviewScreen> {
+  _showBottomSheet(BuildContext context){
+    showModalBottomSheet(
+        context: context,
+        shape: const RoundedRectangleBorder(
+          borderRadius:BorderRadius.vertical(top: Radius.circular(20))
+        ),
+        builder: builder)
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,9 +45,14 @@ class _ReviewScreenState extends State<ReviewScreen> {
               const SizedBox(
                 width: 85,
               ),
-              const CircleAvatar(
-                radius: 16,
-                backgroundImage: AssetImage("assets/image/Frame (11).png"),
+              InkWell(
+                onTap: (){
+                  
+                },
+                child: const CircleAvatar(
+                  radius: 16,
+                  backgroundImage: AssetImage("assets/image/Frame (11).png"),
+                ),
               )
             ],
           ),
