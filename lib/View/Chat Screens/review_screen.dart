@@ -14,7 +14,14 @@ class _ReviewScreenState extends State<ReviewScreen> {
         shape: const RoundedRectangleBorder(
           borderRadius:BorderRadius.vertical(top: Radius.circular(20))
         ),
-        builder: builder)
+        builder: (BuildContext context){
+          return const Column(
+            children: [
+
+            ],
+          );
+        }
+    );
   }
   @override
   Widget build(BuildContext context) {
