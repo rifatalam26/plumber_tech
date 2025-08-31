@@ -14,18 +14,20 @@ class _ReviewScreenState extends State<ReviewScreen> {
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
         builder: (BuildContext context) {
-          return  Column(
+          return Column(
             children: [
               Container(
                 height: 50,
                 width: 150,
                 decoration: const BoxDecoration(
-                  color: Color(0xff034E9D),
-                  borderRadius: BorderRadius.all(Radius.circular(20))
-                ),
-                child: Row(
+                    color: Color(0xff034E9D),
+                    borderRadius: BorderRadius.all(Radius.circular(20))),
+                child: const Row(
                   children: [
-
+                    Text(
+                      "Report an isu",
+                      style: TextStyle(fontSize: 14, color: Colors.white),
+                    )
                   ],
                 ),
               )
