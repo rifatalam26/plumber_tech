@@ -8,21 +8,32 @@ class ReviewScreen extends StatefulWidget {
 }
 
 class _ReviewScreenState extends State<ReviewScreen> {
-  _showBottomSheet(BuildContext context){
+  _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
         context: context,
         shape: const RoundedRectangleBorder(
-          borderRadius:BorderRadius.vertical(top: Radius.circular(20))
-        ),
-        builder: (BuildContext context){
-          return const Column(
+            borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
+        builder: (BuildContext context) {
+          return  Column(
             children: [
+              Container(
+                height: 50,
+                width: 150,
+                decoration: const BoxDecoration(
+                  color: Color(0xff034E9D),
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+                ),
+                child: Row(
+                  children: [
 
+                  ],
+                ),
+              )
             ],
           );
-        }
-    );
+        });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,8 +64,11 @@ class _ReviewScreenState extends State<ReviewScreen> {
                 width: 85,
               ),
               InkWell(
-                onTap: (){
-                  
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => _showBottomSheet(context)));
                 },
                 child: const CircleAvatar(
                   radius: 16,
