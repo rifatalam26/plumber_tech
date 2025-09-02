@@ -8,30 +8,40 @@ class ReviewScreen extends StatefulWidget {
 }
 
 class _ReviewScreenState extends State<ReviewScreen> {
+  bool check = false;
   _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
         context: context,
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
         builder: (BuildContext context) {
-          return Column(
-            children: [
-              Container(
-                height: 50,
-                width: 250,
-                decoration: const BoxDecoration(
-                    color: Color(0xff034E9D),
-                    borderRadius: BorderRadius.all(Radius.circular(20))),
-                child: const Row(
-                  children: [
-                    Text(
-                      "Report an isu",
-                      style: TextStyle(fontSize: 14, color: Colors.white),
-                    )
-                  ],
-                ),
-              )
-            ],
+          return Padding(
+            padding: const EdgeInsets.all(15),
+            child: Column(
+              children: [
+                Container(
+                  height: 50,
+                  width: 250,
+                  decoration: const BoxDecoration(
+                      color: Color(0xff034E9D),
+                      borderRadius: BorderRadius.all(Radius.circular(20))),
+                  child: Row(
+                    children: [
+                      Checkbox(
+                          value: check,
+                          onChanged: (c) {
+                            check = c!;
+                            setState(() {});
+                          }),
+                      const Text(
+                        "Report an isu",
+                        style: TextStyle(fontSize: 14, color: Colors.white),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
           );
         });
   }
