@@ -18,7 +18,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
             children: [
               Container(
                 height: 50,
-                width: 150,
+                width: 250,
                 decoration: const BoxDecoration(
                     color: Color(0xff034E9D),
                     borderRadius: BorderRadius.all(Radius.circular(20))),
