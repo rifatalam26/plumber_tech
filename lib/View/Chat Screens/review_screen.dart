@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class ReviewScreen extends StatefulWidget {
   const ReviewScreen({super.key});
@@ -10,7 +9,7 @@ class ReviewScreen extends StatefulWidget {
 }
 
 class _ReviewScreenState extends State<ReviewScreen> {
-  bool check = false;
+  bool isChecked = false;
   _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,
@@ -23,64 +22,28 @@ class _ReviewScreenState extends State<ReviewScreen> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text('Log Out',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              Container(
+                  height: 50,
+                  width: 320,
+                  decoration: BoxDecoration(
+                      color: const Color(0xff034E9D),
+                      borderRadius: BorderRadius.circular(15)),
+                  child: ListTile(
+                    title: Text(
+                      "Report an issu",
+                      style: TextStyle(fontSize: 14, color: Colors.white),
+                    ),
+                  )),
               const SizedBox(
                 height: 30,
               ),
-              const Text(
-                "Are You Sure you Want to log out",
-                style: TextStyle(fontSize: 15, color: Color(0xff909090)),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    height: 30,
-                    width: 130,
-                    decoration: BoxDecoration(
-                        border: const Border(
-                            top: BorderSide(width: 2, color: Color(0xff7DBABB)),
-                            bottom:
-                            BorderSide(width: 2, color: Color(0xff7DBABB)),
-                            left:
-                            BorderSide(width: 2, color: Color(0xff7DBABB)),
-                            right:
-                            BorderSide(width: 2, color: Color(0xff7DBABB))),
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20)),
-                    child: const Center(
-                        child: Text(
-                          "Cancel",
-                          style: TextStyle(fontSize: 17, color: Color(0xff7DBABB)),
-                        )),
-                  ),
-                  const SizedBox(
-                    width: 30,
-                  ),
-                  Container(
-                    height: 30,
-                    width: 130,
-                    decoration: BoxDecoration(
-                        color: const Color(0xff7DBABB),
-                        borderRadius: BorderRadius.circular(20)),
-                    child: const Center(
-                        child: Text(
-                          "Yes , log out",
-                          style: TextStyle(fontSize: 17, color: Colors.white),
-                        )),
-                  ),
-                ],
-              )
             ],
           ),
         );
       },
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
