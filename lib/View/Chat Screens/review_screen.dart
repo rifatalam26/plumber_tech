@@ -47,8 +47,31 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     ),
                   )),
               const SizedBox(
-                height: 30,
+                height: 20,
               ),
+              Container(
+                  height: 50,
+                  width: 320,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                  border: Border.all(width: 1.5,color: const Color(0xff798090))),
+                  child: ListTile(
+                    title: const Text(
+                      "Some thing else",
+                      style: TextStyle(fontSize: 14, color: Color(0xff515868)),
+                    ),
+                    leading: Radio(
+                        activeColor: Colors.white,
+                        focusColor: Colors.white,
+                        value: options[0],
+                        groupValue: currentOption,
+                        onChanged: (value){
+                          setState(() {
+                            currentOption = value.toString();
+                          });
+                        }
+                    ),
+                  )),
             ],
           ),
         );
