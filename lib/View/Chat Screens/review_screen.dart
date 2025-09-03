@@ -24,6 +24,9 @@ class _ReviewScreenState extends State<ReviewScreen> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              const SizedBox(
+                height: 20,
+              ),
               Container(
                   height: 50,
                   width: 320,
@@ -90,23 +93,45 @@ class _ReviewScreenState extends State<ReviewScreen> {
                 height: 10,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 8,right: 8),
+                padding: const EdgeInsets.only(left: 8, right: 8),
                 child: TextFormField(
                   maxLines: 3,
                   decoration: InputDecoration(
                     hintText: "Describe Issue",
-                      hintStyle: const TextStyle(fontSize: 14,color: Color(0xff515868)),
-                      enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: const BorderSide(
-                              width: 1.5, color: Color(0xff515868))),
-                  focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(15),
-                      borderSide: const BorderSide(
-                          width: 1.5, color: Color(0xff515868))),
+                    hintStyle:
+                        const TextStyle(fontSize: 14, color: Color(0xff515868)),
+                    enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: const BorderSide(
+                            width: 1.5, color: Color(0xff515868))),
+                    focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: const BorderSide(
+                            width: 1.5, color: Color(0xff515868))),
                   ),
                 ),
-              )
+              ),
+              const SizedBox(
+                height: 40,
+              ),
+              Container(
+                  height: 50,
+                  width: 320,
+                  decoration: BoxDecoration(
+                      color: const Color(0xff034E9D),
+                      borderRadius: BorderRadius.circular(25)),
+                  child: const Center(
+                    child: Text(
+                      "Submit",
+                      style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                  )),
+              const SizedBox(
+                height: 30,
+              ),
             ],
           ),
         );
@@ -253,7 +278,8 @@ class _ReviewScreenState extends State<ReviewScreen> {
               width: 320,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  border: Border.all(color: const Color(0xff798090), width: 1.5)),
+                  border:
+                      Border.all(color: const Color(0xff798090), width: 1.5)),
               child: const Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Column(
