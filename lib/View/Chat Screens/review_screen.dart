@@ -7,9 +7,10 @@ class ReviewScreen extends StatefulWidget {
   @override
   State<ReviewScreen> createState() => _ReviewScreenState();
 }
-
+List<String> options = ["Report an isu ","Some thing else"];
 class _ReviewScreenState extends State<ReviewScreen> {
-  bool isChecked = false;
+
+  String currentOption = options[0];
   _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,
@@ -29,9 +30,20 @@ class _ReviewScreenState extends State<ReviewScreen> {
                       color: const Color(0xff034E9D),
                       borderRadius: BorderRadius.circular(15)),
                   child: ListTile(
-                    title: Text(
-                      "Report an issu",
+                    title: const Text(
+                      "Report an isu",
                       style: TextStyle(fontSize: 14, color: Colors.white),
+                    ),
+                    leading: Radio(
+                        activeColor: Colors.white,
+                        focusColor: Colors.white,
+                        value: options[0],
+                        groupValue: currentOption,
+                        onChanged: (value){
+                          setState(() {
+                            currentOption = value.toString();
+                          });
+                        }
                     ),
                   )),
               const SizedBox(
