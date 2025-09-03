@@ -7,9 +7,10 @@ class ReviewScreen extends StatefulWidget {
   @override
   State<ReviewScreen> createState() => _ReviewScreenState();
 }
-List<String> options = ["Report an isu ","Some thing else"];
-class _ReviewScreenState extends State<ReviewScreen> {
 
+List<String> options = ["Report an isu ", "Some thing else"];
+
+class _ReviewScreenState extends State<ReviewScreen> {
   String currentOption = options[0];
   _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
@@ -39,12 +40,11 @@ class _ReviewScreenState extends State<ReviewScreen> {
                         focusColor: Colors.white,
                         value: options[0],
                         groupValue: currentOption,
-                        onChanged: (value){
+                        onChanged: (value) {
                           setState(() {
                             currentOption = value.toString();
                           });
-                        }
-                    ),
+                        }),
                   )),
               const SizedBox(
                 height: 20,
@@ -54,24 +54,58 @@ class _ReviewScreenState extends State<ReviewScreen> {
                   width: 320,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                  border: Border.all(width: 1.5,color: const Color(0xff798090))),
+                      border: Border.all(
+                          width: 1.5, color: const Color(0xff798090))),
                   child: ListTile(
                     title: const Text(
                       "Some thing else",
                       style: TextStyle(fontSize: 14, color: Color(0xff515868)),
                     ),
                     leading: Radio(
-                        activeColor: Colors.white,
+                        activeColor: const Color(0xff515868),
                         focusColor: Colors.white,
-                        value: options[0],
+                        value: options[1],
                         groupValue: currentOption,
-                        onChanged: (value){
+                        onChanged: (value) {
                           setState(() {
                             currentOption = value.toString();
                           });
-                        }
-                    ),
+                        }),
                   )),
+              const SizedBox(
+                height: 20,
+              ),
+              const Row(
+                children: [
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Describe ",
+                    style: TextStyle(fontSize: 15, color: Color(0xff444B5B)),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8,right: 8),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: "Describe Issue",
+                      hintStyle: const TextStyle(fontSize: 14,color: Color(0xff515868)),
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(15),
+                          borderSide: const BorderSide(
+                              width: 1.5, color: Color(0xff515868))),
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide: const BorderSide(
+                          width: 1.5, color: Color(0xff515868))),
+                  ),
+                ),
+              )
             ],
           ),
         );
