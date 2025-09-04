@@ -6,6 +6,7 @@ import 'View/Chat Screens/inbox_chat_screen.dart';
 import 'View/Chat Screens/review_screen.dart';
 import 'View/Chat Screens/test1.dart';
 import 'View/Chat Screens/video_calling_screen.dart';
+import 'View/Home screens/question_page_1.dart';
 
 
 void main() {

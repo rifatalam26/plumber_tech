@@ -44,9 +44,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                         value: options[0],
                         groupValue: currentOption,
                         onChanged: (value) {
-                          setState(() {
-                            currentOption = value.toString();
-                          });
+                          currentOption = value.toString();
                         }),
                   )),
               const SizedBox(
@@ -66,13 +64,11 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     ),
                     leading: Radio(
                         activeColor: const Color(0xff515868),
-                        focusColor: Colors.white,
+                        focusColor: const Color(0xff515868),
                         value: options[1],
                         groupValue: currentOption,
                         onChanged: (value) {
-                          setState(() {
-                            currentOption = value.toString();
-                          });
+                          currentOption = value.toString();
                         }),
                   )),
               const SizedBox(
