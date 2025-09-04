@@ -8,11 +8,11 @@ class ReviewScreen extends StatefulWidget {
   State<ReviewScreen> createState() => _ReviewScreenState();
 }
 
-List<String> options = ["Report an isu ","Some thing else"];
+List<String> options = ["Report an isu ", "Some thing else"];
 
 class _ReviewScreenState extends State<ReviewScreen> {
   String currentOption = options[0];
-   _showBottomSheet(BuildContext context) {
+  _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true, // This is important
@@ -22,9 +22,12 @@ class _ReviewScreenState extends State<ReviewScreen> {
       builder: (BuildContext context) {
         return Padding(
           padding: EdgeInsets.only(
-            bottom: MediaQuery.of(context).viewInsets.bottom, // Adjust padding for keyboard
+            bottom: MediaQuery.of(context)
+                .viewInsets
+                .bottom, // Adjust padding for keyboard
           ),
-          child: SingleChildScrollView( // Allows scrolling when keyboard appears
+          child: SingleChildScrollView(
+            // Allows scrolling when keyboard appears
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -70,7 +73,8 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     child: ListTile(
                       title: const Text(
                         "Something else",
-                        style: TextStyle(fontSize: 14, color: Color(0xff515868)),
+                        style:
+                            TextStyle(fontSize: 14, color: Color(0xff515868)),
                       ),
                       leading: Radio(
                         activeColor: const Color(0xff515868),
@@ -91,7 +95,8 @@ class _ReviewScreenState extends State<ReviewScreen> {
                       SizedBox(width: 20),
                       Text(
                         "Describe ",
-                        style: TextStyle(fontSize: 15, color: Color(0xff444B5B)),
+                        style:
+                            TextStyle(fontSize: 15, color: Color(0xff444B5B)),
                       ),
                     ],
                   ),
