@@ -8,7 +8,7 @@ class ReviewScreen extends StatefulWidget {
   State<ReviewScreen> createState() => _ReviewScreenState();
 }
 
-List<String> options = ["Report an isu ", "Some thing else"];
+List<String> options = ["Report an isu ","Some thing else"];
 
 class _ReviewScreenState extends State<ReviewScreen> {
   String currentOption = options[0];
