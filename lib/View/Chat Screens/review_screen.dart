@@ -12,123 +12,140 @@ List<String> options = ["Report an isu ", "Some thing else"];
 
 class _ReviewScreenState extends State<ReviewScreen> {
   String currentOption = options[0];
-  _showBottomSheet(BuildContext context) {
+   _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,
+      isScrollControlled: true, // This is important
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       builder: (BuildContext context) {
         return Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const SizedBox(
-                height: 20,
-              ),
-              Container(
-                  height: 50,
-                  width: 320,
-                  decoration: BoxDecoration(
+          padding: EdgeInsets.only(
+            bottom: MediaQuery.of(context).viewInsets.bottom, // Adjust padding for keyboard
+          ),
+          child: SingleChildScrollView( // Allows scrolling when keyboard appears
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const SizedBox(height: 20),
+                  Container(
+                    height: 50,
+                    width: 320,
+                    decoration: BoxDecoration(
                       color: const Color(0xff034E9D),
-                      borderRadius: BorderRadius.circular(15)),
-                  child: ListTile(
-                    title: const Text(
-                      "Report an isu",
-                      style: TextStyle(fontSize: 14, color: Colors.white),
+                      borderRadius: BorderRadius.circular(15),
                     ),
-                    leading: Radio(
+                    child: ListTile(
+                      title: const Text(
+                        "Report an issue",
+                        style: TextStyle(fontSize: 14, color: Colors.white),
+                      ),
+                      leading: Radio(
                         activeColor: Colors.white,
                         focusColor: Colors.white,
                         value: options[0],
                         groupValue: currentOption,
                         onChanged: (value) {
-                          currentOption = value.toString();
-                        }),
-                  )),
-              const SizedBox(
-                height: 20,
-              ),
-              Container(
-                  height: 50,
-                  width: 320,
-                  decoration: BoxDecoration(
+                          setState(() {
+                            currentOption = value.toString();
+                          });
+                        },
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Container(
+                    height: 50,
+                    width: 320,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       border: Border.all(
-                          width: 1.5, color: const Color(0xff798090))),
-                  child: ListTile(
-                    title: const Text(
-                      "Some thing else",
-                      style: TextStyle(fontSize: 14, color: Color(0xff515868)),
+                        width: 1.5,
+                        color: const Color(0xff798090),
+                      ),
                     ),
-                    leading: Radio(
+                    child: ListTile(
+                      title: const Text(
+                        "Something else",
+                        style: TextStyle(fontSize: 14, color: Color(0xff515868)),
+                      ),
+                      leading: Radio(
                         activeColor: const Color(0xff515868),
                         focusColor: const Color(0xff515868),
                         value: options[1],
                         groupValue: currentOption,
                         onChanged: (value) {
-                          currentOption = value.toString();
-                        }),
-                  )),
-              const SizedBox(
-                height: 20,
-              ),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 20,
+                          setState(() {
+                            currentOption = value.toString();
+                          });
+                        },
+                      ),
+                    ),
                   ),
-                  Text(
-                    "Describe ",
-                    style: TextStyle(fontSize: 15, color: Color(0xff444B5B)),
-                  )
-                ],
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 8, right: 8),
-                child: TextFormField(
-                  maxLines: 3,
-                  decoration: InputDecoration(
-                    hintText: "Describe Issue",
-                    hintStyle:
-                        const TextStyle(fontSize: 14, color: Color(0xff515868)),
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                        borderSide: const BorderSide(
-                            width: 1.5, color: Color(0xff515868))),
-                    focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(15),
-                        borderSide: const BorderSide(
-                            width: 1.5, color: Color(0xff515868))),
+                  const SizedBox(height: 20),
+                  const Row(
+                    children: [
+                      SizedBox(width: 20),
+                      Text(
+                        "Describe ",
+                        style: TextStyle(fontSize: 15, color: Color(0xff444B5B)),
+                      ),
+                    ],
                   ),
-                ),
-              ),
-              const SizedBox(
-                height: 40,
-              ),
-              Container(
-                  height: 50,
-                  width: 320,
-                  decoration: BoxDecoration(
+                  const SizedBox(height: 10),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: TextFormField(
+                      maxLines: 3,
+                      decoration: InputDecoration(
+                        hintText: "Describe Issue",
+                        hintStyle: const TextStyle(
+                          fontSize: 14,
+                          color: Color(0xff515868),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(15),
+                          borderSide: const BorderSide(
+                            width: 1.5,
+                            color: Color(0xff515868),
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(15),
+                          borderSide: const BorderSide(
+                            width: 1.5,
+                            color: Color(0xff515868),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 40),
+                  Container(
+                    height: 50,
+                    width: 320,
+                    decoration: BoxDecoration(
                       color: const Color(0xff034E9D),
-                      borderRadius: BorderRadius.circular(25)),
-                  child: const Center(
-                    child: Text(
-                      "Submit",
-                      style: TextStyle(
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "Submit",
+                        style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white),
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
-                  )),
-              const SizedBox(
-                height: 30,
+                  ),
+                  const SizedBox(height: 30),
+                ],
               ),
-            ],
+            ),
           ),
         );
       },
