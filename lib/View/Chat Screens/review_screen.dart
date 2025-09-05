@@ -16,154 +16,170 @@ class _ReviewScreenState extends State<ReviewScreen> {
   _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,
-      isScrollControlled: true, // This is important
+      isScrollControlled: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       builder: (BuildContext context) {
-        return Padding(
-          padding: EdgeInsets.only(
-            bottom: MediaQuery.of(context)
-                .viewInsets
-                .bottom, // Adjust padding for keyboard
-          ),
-          child: SingleChildScrollView(
-            // Allows scrolling when keyboard appears
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const SizedBox(height: 20),
-                  Container(
-                    height: 50,
-                    width: 320,
-                    decoration: BoxDecoration(
-                      color: currentOption == options[0]
-                        ? const Color(0xff034E9D)
-                          :Colors.transparent,
-                      borderRadius: BorderRadius.circular(15),
-                      border: currentOption == options[0]
-                        ?null
-                          :Border.all(
-                        width: 1.5,
-                        color: const Color(0xff798090),
-                      ),
-                    ),
-                    child: ListTile(
-                      title:  Text(
-                        options[0],
-                        style: TextStyle(fontSize: 14,
-                          color: currentOption == options[0]
-                              ? Colors.white
-                              : const Color(0xff515868),),
-                      ),
-                      leading: Radio(
-                        activeColor: Colors.white,
-                        focusColor: Colors.white,
-                        value: options[0],
-                        groupValue: currentOption,
-                        onChanged: (value) {
-                          setState(() {
-                            currentOption = value.toString();
-                          });
-                        },
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  Container(
-                    height: 50,
-                    width: 320,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      border: Border.all(
-                        width: 1.5,
-                        color: const Color(0xff798090),
-                      ),
-                    ),
-                    child: ListTile(
-                      title: const Text(
-                        "Something else",
-                        style:
-                            TextStyle(fontSize: 14, color: Color(0xff515868)),
-                      ),
-                      leading: Radio(
-                        activeColor: const Color(0xff515868),
-                        focusColor: const Color(0xff515868),
-                        value: options[1],
-                        groupValue: currentOption,
-                        onChanged: (value) {
-                          setState(() {
-                            currentOption = value.toString();
-                          });
-                        },
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  const Row(
+        return StatefulBuilder(
+          builder: (BuildContext context, StateSetter setModalState) {
+            return Padding(
+              padding: EdgeInsets.only(
+                bottom: MediaQuery.of(context).viewInsets.bottom,
+              ),
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      SizedBox(width: 20),
-                      Text(
-                        "Describe ",
-                        style:
-                            TextStyle(fontSize: 15, color: Color(0xff444B5B)),
+                      const SizedBox(height: 20),
+                      // First option container
+                      Container(
+                        height: 50,
+                        width: 320,
+                        decoration: BoxDecoration(
+                          color: currentOption == options[0]
+                              ? const Color(0xff034E9D) // Selected color
+                              : Colors.transparent, // Unselected color
+                          borderRadius: BorderRadius.circular(15),
+                          border: currentOption == options[0]
+                              ? null
+                              : Border.all(
+                            width: 1.5,
+                            color: const Color(0xff798090),
+                          ),
+                        ),
+                        child: ListTile(
+                          title: Text(
+                            options[0],
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: currentOption == options[0]
+                                  ? Colors.white
+                                  : const Color(0xff515868),
+                            ),
+                          ),
+                          leading: Radio(
+                            activeColor: currentOption == options[0]
+                                ? Colors.white
+                                : const Color(0xff515868),
+                            value: options[0],
+                            groupValue: currentOption,
+                            onChanged: (value) {
+                              setModalState(() {
+                                currentOption = value.toString();
+                              });
+                            },
+                          ),
+                        ),
                       ),
+                      const SizedBox(height: 20),
+                      // Second option container
+                      Container(
+                        height: 50,
+                        width: 320,
+                        decoration: BoxDecoration(
+                          color: currentOption == options[1]
+                              ? const Color(0xff034E9D) // Selected color
+                              : Colors.transparent, // Unselected color
+                          borderRadius: BorderRadius.circular(15),
+                          border: currentOption == options[1]
+                              ? null
+                              : Border.all(
+                            width: 1.5,
+                            color: const Color(0xff798090),
+                          ),
+                        ),
+                        child: ListTile(
+                          title: Text(
+                            options[1],
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: currentOption == options[1]
+                                  ? Colors.white
+                                  : const Color(0xff515868),
+                            ),
+                          ),
+                          leading: Radio(
+                            activeColor: currentOption == options[1]
+                                ? Colors.white
+                                : const Color(0xff515868),
+                            value: options[1],
+                            groupValue: currentOption,
+                            onChanged: (value) {
+                              setModalState(() {
+                                currentOption = value.toString();
+                              });
+                            },
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      // The rest of your bottom sheet content
+                      const Row(
+                        children: [
+                          SizedBox(width: 20),
+                          Text(
+                            "Describe ",
+                            style: TextStyle(fontSize: 15, color: Color(0xff444B5B)),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 10),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: TextFormField(
+                          maxLines: 3,
+                          decoration: InputDecoration(
+                            hintText: "Describe Issue",
+                            hintStyle: const TextStyle(
+                              fontSize: 14,
+                              color: Color(0xff515868),
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(15),
+                              borderSide: const BorderSide(
+                                width: 1.5,
+                                color: Color(0xff515868),
+                              ),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(15),
+                              borderSide: const BorderSide(
+                                width: 1.5,
+                                color: Color(0xff515868),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 40),
+                      Container(
+                        height: 50,
+                        width: 320,
+                        decoration: BoxDecoration(
+                          color: const Color(0xff034E9D),
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "Submit",
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 30),
                     ],
                   ),
-                  const SizedBox(height: 10),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: TextFormField(
-                      maxLines: 3,
-                      decoration: InputDecoration(
-                        hintText: "Describe Issue",
-                        hintStyle: const TextStyle(
-                          fontSize: 14,
-                          color: Color(0xff515868),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: const BorderSide(
-                            width: 1.5,
-                            color: Color(0xff515868),
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: const BorderSide(
-                            width: 1.5,
-                            color: Color(0xff515868),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 40),
-                  Container(
-                    height: 50,
-                    width: 320,
-                    decoration: BoxDecoration(
-                      color: const Color(0xff034E9D),
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        "Submit",
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 30),
-                ],
+                ),
               ),
-            ),
-          ),
+            );
+          },
         );
       },
     );
