@@ -39,7 +39,9 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     height: 50,
                     width: 320,
                     decoration: BoxDecoration(
-                      color: const Color(0xff034E9D),
+                      color: currentOption == options[0]
+                        ? const Color(0xff034E9D)
+                          :Colors.transparent,
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: ListTile(
