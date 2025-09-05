@@ -43,6 +43,12 @@ class _ReviewScreenState extends State<ReviewScreen> {
                         ? const Color(0xff034E9D)
                           :Colors.transparent,
                       borderRadius: BorderRadius.circular(15),
+                      border: currentOption == options[0]
+                        ?null
+                          :Border.all(
+                        width: 1.5,
+                        color: const Color(0xff798090),
+                      ),
                     ),
                     child: ListTile(
                       title: const Text(
