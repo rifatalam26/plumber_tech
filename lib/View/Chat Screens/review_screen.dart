@@ -7,11 +7,12 @@ class ReviewScreen extends StatefulWidget {
   @override
   State<ReviewScreen> createState() => _ReviewScreenState();
 }
-
+String currentOption = '';
 List<String> options = ["Report an isu ", "Some thing else"];
 
 class _ReviewScreenState extends State<ReviewScreen> {
-  String currentOption = options[0];
+
+
   _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,
