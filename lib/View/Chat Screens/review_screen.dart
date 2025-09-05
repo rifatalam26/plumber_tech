@@ -51,9 +51,12 @@ class _ReviewScreenState extends State<ReviewScreen> {
                       ),
                     ),
                     child: ListTile(
-                      title: const Text(
-                        "Report an issue",
-                        style: TextStyle(fontSize: 14, color: Colors.white),
+                      title:  Text(
+                        options[0],
+                        style: TextStyle(fontSize: 14,
+                          color: currentOption == options[0]
+                              ? Colors.white
+                              : const Color(0xff515868),),
                       ),
                       leading: Radio(
                         activeColor: Colors.white,
