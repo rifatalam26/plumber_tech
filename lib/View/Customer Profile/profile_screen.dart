@@ -14,16 +14,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
       body: Column(
         children: [
           Container(
-            width: 200,
+            width: 300,
+            height: 500,
             color: const Color(0xff044D9B),
             child: Column(
               children: [
                 SizedBox(
                   height:50 ,
                 ),
-                CircleAvatar(
-                  radius: 25,
-                  backgroundImage: AssetImage("assets/image/Ellipse 3270 (1).png"),
+                Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 25,
+                      backgroundImage: AssetImage("assets/image/Ellipse 3270 (1).png"),
+                    ),
+                  ],
                 )
               ],
             ),
