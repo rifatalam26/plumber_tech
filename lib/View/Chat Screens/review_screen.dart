@@ -7,12 +7,11 @@ class ReviewScreen extends StatefulWidget {
   @override
   State<ReviewScreen> createState() => _ReviewScreenState();
 }
+
 String currentOption = '';
 List<String> options = ["Report an isu ", "Some thing else"];
 
 class _ReviewScreenState extends State<ReviewScreen> {
-
-
   _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,
@@ -34,7 +33,6 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       const SizedBox(height: 20),
-                      // First option container
                       Container(
                         height: 50,
                         width: 320,
@@ -46,9 +44,9 @@ class _ReviewScreenState extends State<ReviewScreen> {
                           border: currentOption == options[0]
                               ? null
                               : Border.all(
-                            width: 1.5,
-                            color: const Color(0xff798090),
-                          ),
+                                  width: 1.5,
+                                  color: const Color(0xff798090),
+                                ),
                         ),
                         child: ListTile(
                           title: Text(
@@ -75,7 +73,6 @@ class _ReviewScreenState extends State<ReviewScreen> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      // Second option container
                       Container(
                         height: 50,
                         width: 320,
@@ -87,9 +84,9 @@ class _ReviewScreenState extends State<ReviewScreen> {
                           border: currentOption == options[1]
                               ? null
                               : Border.all(
-                            width: 1.5,
-                            color: const Color(0xff798090),
-                          ),
+                                  width: 1.5,
+                                  color: const Color(0xff798090),
+                                ),
                         ),
                         child: ListTile(
                           title: Text(
@@ -116,13 +113,13 @@ class _ReviewScreenState extends State<ReviewScreen> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      // The rest of your bottom sheet content
                       const Row(
                         children: [
                           SizedBox(width: 20),
                           Text(
                             "Describe ",
-                            style: TextStyle(fontSize: 15, color: Color(0xff444B5B)),
+                            style: TextStyle(
+                                fontSize: 15, color: Color(0xff444B5B)),
                           ),
                         ],
                       ),
