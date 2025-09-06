@@ -15,7 +15,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         children: [
           Container(
             width: 310,
-            height: 500,
+            height: 750,
             color: const Color(0xff044D9B),
             child: Column(
               children: [
@@ -102,7 +102,38 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: Colors.white,
                     )
                   ],
-                )
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                Row(
+                  children: [
+                    const SizedBox(
+                      width: 25,
+                    ),
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/image/icon (1).png"))),
+                    ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    const Text(
+                      "Logout",
+                      style: TextStyle(fontSize: 16, color: Colors.white),
+                    ),
+                    const SizedBox(
+                      width: 115,
+                    ),
+                    const Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.white,
+                    )
+                  ],
+                ),
               ],
             ),
           )
