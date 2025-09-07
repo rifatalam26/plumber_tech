@@ -128,10 +128,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     const SizedBox(
                       width: 115,
                     ),
-                    const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.white,
-                    )
                   ],
                 ),
               ],
