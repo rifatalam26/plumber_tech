@@ -1,47 +1,19 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
-
-class MainScreen extends StatefulWidget {
-  const MainScreen({super.key});
-
+class MyHomePage extends StatefulWidget {
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
-  // Tab icons
-  final List<IconData> _icons = [
-    Icons.home_outlined,
-    Icons.bar_chart_outlined,
-    Icons.notifications_outlined,
-    Icons.person_outlined,
-  ];
-
-  // Selected tab icons
-  final List<IconData> _selectedIcons = [
-    Icons.home,
-    Icons.bar_chart,
-    Icons.notifications,
-    Icons.person,
-  ];
-
-  // Tab labels
-  final List<String> _labels = [
-    'Home',
-    'Chart',
-    'Notification',
-    'Profile'
-  ];
-
-  // Tab views (placeholder for your actual screens)
-  final List<Widget> _screens = [
-    const PlaceholderScreen(title: 'Home Screen'),
-    const PlaceholderScreen(title: 'Chart Screen'),
-    const PlaceholderScreen(title: 'Notification Screen'),
-    const PlaceholderScreen(title: 'Profile Screen'),
+  static const List<Widget> _widgetOptions = <Widget>[
+    Text('Home Page'),
+    Text('Chat Page'),
+    Text('Notification Page'),
+    Text('Profile Page'),
   ];
 
   void _onItemTapped(int index) {
@@ -53,74 +25,29 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Bottom Navigation Example'),
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
-      ),
-      body: _screens[_selectedIndex],
-      bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-          borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
           ),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 10,
-              spreadRadius: 2,
-              offset: const Offset(0, -2),
-            ),
-          ],
-        ),
-        child: ClipRRect(
-          borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat),
+            label: 'Chat',
           ),
-          child: BottomNavigationBar(
-            items: List.generate(_icons.length, (index) {
-              return BottomNavigationBarItem(
-                icon: Icon(
-                  _selectedIndex == index
-                      ? _selectedIcons[index]
-                      : _icons[index],
-                  size: 24,
-                ),
-                label: _labels[index],
-              );
-            }),
-            currentIndex: _selectedIndex,
-            selectedItemColor: Colors.blue,
-            unselectedItemColor: Colors.grey,
-            onTap: _onItemTapped,
-            type: BottomNavigationBarType.fixed,
-            backgroundColor: Colors.white,
-            elevation: 10,
-            showSelectedLabels: true,
-            showUnselectedLabels: true,
-            selectedFontSize: 12,
-            unselectedFontSize: 12,
+          BottomNavigationBarItem(
+            icon: Icon(Icons.notifications),
+            label: 'Notification',
           ),
-        ),
-      ),
-    );
-  }
-}
-
-// Placeholder for your actual screens
-class PlaceholderScreen extends StatelessWidget {
-  final String title;
-
-  const PlaceholderScreen({super.key, required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        title,
-        style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.grey,
+        onTap: _onItemTapped,
       ),
     );
   }
