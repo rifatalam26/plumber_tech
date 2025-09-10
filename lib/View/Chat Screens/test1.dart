@@ -35,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.chat),
             label: 'Chat',
           ),
+
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
             label: 'Notification',
