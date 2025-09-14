@@ -25,7 +25,6 @@ class _MainScreenState extends State<MainScreen> {
     Icons.notifications,
     Icons.person,
   ];
-
   // Tab labels
   final List<String> _labels = ['Home', 'Chart', 'Notification', 'Profile'];
   void _onItemTapped(int index) {
@@ -59,7 +58,7 @@ class _MainScreenState extends State<MainScreen> {
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.white,
         elevation: 10,
-        showSelectedLabels: true,
+       showSelectedLabels: true,
         showUnselectedLabels: true,
         selectedFontSize: 12,
         unselectedFontSize: 12,
@@ -68,19 +67,4 @@ class _MainScreenState extends State<MainScreen> {
   }
 }
 
-// Placeholder for your actual screens
-class PlaceholderScreen extends StatelessWidget {
-  final String title;
 
-  const PlaceholderScreen({super.key, required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        title,
-        style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-      ),
-    );
-  }
-}
