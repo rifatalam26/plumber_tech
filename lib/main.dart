@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:plumber_tech/View/Customer%20Profile/profile_screen.dart';
-
 import 'View/Chat Screens/test1.dart';
-
-
 
 
 void main() {
@@ -16,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:MyHomePage(),
+      home:MainScreen(),
     );
   }
 }
