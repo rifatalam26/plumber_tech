@@ -14,7 +14,7 @@ class _MainScreenState extends State<MainScreen> {
   // Tab icons
   final List<IconData> _icons = [
     Icons.home_outlined,
-    Icons.bar_chart_outlined,
+    Icons.chat,
     Icons.notifications_outlined,
     Icons.person_outlined,
   ];
@@ -22,7 +22,7 @@ class _MainScreenState extends State<MainScreen> {
   // Selected tab icons
   final List<IconData> _selectedIcons = [
     Icons.home,
-    Icons.bar_chart,
+    Icons.chat,
     Icons.notifications,
     Icons.person,
   ];
@@ -34,15 +34,6 @@ class _MainScreenState extends State<MainScreen> {
     'Notification',
     'Profile'
   ];
-
-  // Tab views (placeholder for your actual screens)
-  final List<Widget> _screens = [
-    const PlaceholderScreen(title: 'Home Screen'),
-    const PlaceholderScreen(title: 'Chart Screen'),
-    const PlaceholderScreen(title: 'Notification Screen'),
-    const PlaceholderScreen(title: 'Profile Screen'),
-  ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -57,7 +48,7 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
-      body: _screens[_selectedIndex],
+
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.only(
