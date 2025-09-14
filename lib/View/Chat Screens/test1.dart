@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -28,12 +27,7 @@ class _MainScreenState extends State<MainScreen> {
   ];
 
   // Tab labels
-  final List<String> _labels = [
-    'Home',
-    'Chart',
-    'Notification',
-    'Profile'
-  ];
+  final List<String> _labels = ['Home', 'Chart', 'Notification', 'Profile'];
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -48,52 +42,27 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
-
-      bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-          borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20),
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 10,
-              spreadRadius: 2,
-              offset: const Offset(0, -2),
+      bottomNavigationBar: BottomNavigationBar(
+        items: List.generate(_icons.length, (index) {
+          return BottomNavigationBarItem(
+            icon: Icon(
+              _selectedIndex == index ? _selectedIcons[index] : _icons[index],
+              size: 24,
             ),
-          ],
-        ),
-        child: ClipRRect(
-          borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20),
-          ),
-          child: BottomNavigationBar(
-            items: List.generate(_icons.length, (index) {
-              return BottomNavigationBarItem(
-                icon: Icon(
-                  _selectedIndex == index
-                      ? _selectedIcons[index]
-                      : _icons[index],
-                  size: 24,
-                ),
-                label: _labels[index],
-              );
-            }),
-            currentIndex: _selectedIndex,
-            selectedItemColor: Colors.blue,
-            unselectedItemColor: Colors.grey,
-            onTap: _onItemTapped,
-            type: BottomNavigationBarType.fixed,
-            backgroundColor: Colors.white,
-            elevation: 10,
-            showSelectedLabels: true,
-            showUnselectedLabels: true,
-            selectedFontSize: 12,
-            unselectedFontSize: 12,
-          ),
-        ),
+            label: _labels[index],
+          );
+        }),
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.grey,
+        onTap: _onItemTapped,
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
+        elevation: 10,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
+        selectedFontSize: 12,
+        unselectedFontSize: 12,
       ),
     );
   }
